@@ -1,0 +1,6 @@
+{
+  "matcher": "(?i)^(?:.*)\\bmake\\b",
+  "test_ok": ["GNU make", "bla bla MAKE", "make package"],
+  "test_fail": ["makers", "amake", "bla bla noMake"],
+  "packages": [{ "name": "make", "manager": "apt" }]
+}

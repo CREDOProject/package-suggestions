@@ -1,0 +1,10 @@
+{
+  "matcher": "(?i)^(?:.*)\\b(subversion|svn)\\b",
+  "test_ok": [
+    "Do you really wanna know what I need? subversion.",
+    "svn seems a really good idea",
+    "I might need svn"
+  ],
+  "test_fail": ["nosvnpleaseno", "subversionista"],
+  "packages": [{ "name": "subversion", "manager": "apt" }]
+}
