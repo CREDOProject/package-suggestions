@@ -1,0 +1,6 @@
+{
+  "matcher": "(?i)^(?:.*)\\bpandoc\\b",
+  "test_ok": ["PANDOC", "pandoc", "we need pandoc", "pandoc is needed"],
+  "test_fail": ["pandoccu", "nopandoc", "somethingpandoc"],
+  "packages": [{ "name": "make", "manager": "apt" }]
+}
