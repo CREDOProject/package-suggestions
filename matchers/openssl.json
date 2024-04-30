@@ -1,0 +1,6 @@
+{
+  "matcher": "(?i)^(?:.*)\\bopenssl\\b",
+  "test_ok": ["openssl", "OpenSSL", "OpenSSL package", "needs OpenSSL"],
+  "test_fail": ["notopenssl", "maybessl"],
+  "packages": [{ "name": "libssl-dev", "manager": "apt" }]
+}
