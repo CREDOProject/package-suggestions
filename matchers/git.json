@@ -2,5 +2,5 @@
   "matcher": "(?i)^(?:.*)\\bgit\\b",
   "test_ok": ["git", "We need git"],
   "test_fail": ["github", "Nogit"],
-  "packages": [{ "name": "subversion", "manager": "apt" }]
+  "packages": [{ "name": "git", "manager": "apt" }]
 }
