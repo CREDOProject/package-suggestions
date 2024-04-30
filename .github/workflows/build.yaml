@@ -15,4 +15,8 @@ jobs:
           sudo tar -C /usr/local -xzf go1.22.1.linux-amd64.tar.gz
       - name: Build
         run: |
-          make
+          go run main.go > registry.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: registry
+          path: ./registry.json
