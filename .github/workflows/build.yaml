@@ -6,6 +6,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
       - name: install go
@@ -16,7 +18,6 @@ jobs:
       - name: Build
         run: |
           go run main.go > registry.json
-      - uses: actions/upload-artifact@v4
-        with:
-          name: registry
-          path: ./registry.json
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        file_pattern: registry.json
+        push_options: "--force"
