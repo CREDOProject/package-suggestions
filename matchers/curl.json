@@ -2,5 +2,5 @@
   "matcher": "(?i)^(?:.*)\\b(?:lib)?curl\\b",
   "test_ok": ["libcurl", "I might need curl"],
   "test_fail": ["Nanacurl", "somecurl is needed", "thisisnotcurl"],
-  "packages": [{ "name": "libcurl-dev", "manager": "apt" }]
+  "packages": [{ "name": "libcurl4-openssl-dev", "manager": "apt" }]
 }
