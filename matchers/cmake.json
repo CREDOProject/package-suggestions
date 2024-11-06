@@ -1,0 +1,6 @@
+{
+  "matcher": "(?i)^(?:.*)\\bcmake\\b",
+  "test_ok": ["cmake", "bla bla CMAKE", "cmake package"],
+  "test_fail": ["GNU MAKE", "GNU make", "bla bla noMake"],
+  "packages": [{ "name": "cmake", "manager": "apt" }]
+}
