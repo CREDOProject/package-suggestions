@@ -1,0 +1,15 @@
+{
+  "matcher": "(?i)^(?:.*)\\bicu(?:4c)?\\b",
+  "test_ok": ["ICU", "icu4c", "ICU4C", "ICU (> 123)"],
+  "test_fail": ["NOTICU", "UUCU", "thisisnotICU"],
+  "packages": [
+    {
+      "manager": "apt",
+      "name": "libicu-dev"
+    },
+    {
+      "manager": "dnf",
+      "name": "libicu-devel"
+    }
+  ]
+}
