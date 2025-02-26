@@ -1,0 +1,13 @@
+{
+  "matcher": "^(?:.*)\\b(XVector)\\b",
+  "test_ok": [
+    "Do you really wanna know what I need? XVector.",
+    "XVector seems a really good idea",
+    "I might need XVector"
+  ],
+  "test_fail": ["xvector", "xvectors"],
+  "packages": [
+    { "name": "zlib1g-dev", "manager": "apt" },
+    { "name": "zlib-devel", "manager": "dnf" }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "matcher": "^(?:.*)\\b(RcppArmadillo)\\b",
+  "test_ok": [
+    "Do you really wanna know what I need? RcppArmadillo.",
+    "RcppArmadillo seems a really good idea",
+    "I might need RcppArmadillo"
+  ],
+  "test_fail": ["rcpparmadillo", ""],
+  "packages": [
+    { "name": "libblas-dev", "manager": "apt" },
+    { "name": "liblapack-dev", "manager": "apt" },
+    { "name": "lapack-devel", "manager": "dnf" },
+    { "name": "blas-devel", "manager": "dnf" }
+  ]
+}
