@@ -9,7 +9,9 @@
   "packages": [
     { "name": "libblas-dev", "manager": "apt" },
     { "name": "liblapack-dev", "manager": "apt" },
+    { "name": "r-base-dev", "manager": "apt" },
     { "name": "lapack-devel", "manager": "dnf" },
-    { "name": "blas-devel", "manager": "dnf" }
+    { "name": "blas-devel", "manager": "dnf" },
+    { "name": "R-core-devel", "manager": "dnf" }
   ]
 }
