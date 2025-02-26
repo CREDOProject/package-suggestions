@@ -8,6 +8,8 @@
   "test_fail": ["xvector", "xvectors"],
   "packages": [
     { "name": "zlib1g-dev", "manager": "apt" },
-    { "name": "zlib-devel", "manager": "dnf" }
+    { "name": "zlib-devel", "manager": "dnf" },
+    { "name": "r-base-dev", "manager": "apt" },
+    { "name": "R-core-devel", "manager": "dnf" }
   ]
 }
