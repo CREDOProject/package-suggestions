@@ -35,3 +35,11 @@ go run main.go > registry.json
 This command validates all matchers against their test cases and outputs the
 combined registry to `registry.json`. If any test case fails, the command will
 exit with an error log.
+
+## Using the GUI
+
+Alternatively, you can use the interactive GUI tool to create and test matchers.
+
+1.  Open the GUI in your browser: [https://credoproject.github.io/package-suggestions/](https://credoproject.github.io/package-suggestions/)
+2.  Use the interface to define your regex, test cases, and suggested packages.
+3.  Download the generated JSON file and place it in the `matchers/` directory.
