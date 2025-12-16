@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bcairo\\b",
+  "test_ok": [
+    "I need cairo installed.",
+    "cairo seems like a good dependency.",
+    "Error: cairo not found.",
+    "cairo"
+  ],
+  "test_fail": [
+    "cairos",
+    "libcairo",
+    "cairolib"
+  ],
+  "packages": [
+    {
+      "name": "cairo-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "cairo-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "cairo-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libcairo2-dev",
+      "manager": "apt"
+    }
+  ]
+}

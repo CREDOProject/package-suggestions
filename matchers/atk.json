@@ -1,0 +1,44 @@
+{
+  "matcher": "^(?:.*)\\batk\\b",
+  "test_ok": [
+    "I need atk installed.",
+    "atk seems like a good dependency.",
+    "Error: atk not found.",
+    "atk"
+  ],
+  "test_fail": [
+    "atks",
+    "libatk",
+    "atklib"
+  ],
+  "packages": [
+    {
+      "name": "atk-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "atk-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "atk-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "atkmm-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "atkmm2.36-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libatk-1_0-0",
+      "manager": "zypper"
+    },
+    {
+      "name": "libatk1.0-dev",
+      "manager": "apt"
+    }
+  ]
+}

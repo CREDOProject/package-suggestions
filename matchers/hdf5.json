@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bhdf5\\b",
+  "test_ok": [
+    "I need hdf5 installed.",
+    "hdf5 seems like a good dependency.",
+    "Error: hdf5 not found.",
+    "hdf5"
+  ],
+  "test_fail": [
+    "hdf5s",
+    "libhdf5",
+    "hdf5lib"
+  ],
+  "packages": [
+    {
+      "name": "hdf5-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "hdf5-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "hdf5-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libhdf5-dev",
+      "manager": "apt"
+    }
+  ]
+}

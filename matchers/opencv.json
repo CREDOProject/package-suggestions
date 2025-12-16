@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bopencv\\b",
+  "test_ok": [
+    "I need opencv installed.",
+    "opencv seems like a good dependency.",
+    "Error: opencv not found.",
+    "opencv"
+  ],
+  "test_fail": [
+    "opencvs",
+    "libopencv",
+    "opencvlib"
+  ],
+  "packages": [
+    {
+      "name": "libopencv-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "opencv-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "opencv-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "opencv-devel",
+      "manager": "zypper"
+    }
+  ]
+}

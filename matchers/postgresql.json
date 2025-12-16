@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\bpostgresql\\b",
+  "test_ok": [
+    "I need postgresql installed.",
+    "postgresql seems like a good dependency.",
+    "Error: postgresql not found.",
+    "postgresql"
+  ],
+  "test_fail": [
+    "postgresqls",
+    "libpostgresql",
+    "postgresqllib"
+  ],
+  "packages": [
+    {
+      "name": "libpq-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libpq-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libpq-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "postgresql-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "postgresql-devel",
+      "manager": "zypper"
+    }
+  ]
+}

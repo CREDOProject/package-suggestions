@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\bgpgme\\b",
+  "test_ok": [
+    "I need gpgme installed.",
+    "gpgme seems like a good dependency.",
+    "Error: gpgme not found.",
+    "gpgme"
+  ],
+  "test_fail": [
+    "gpgmes",
+    "libgpgme",
+    "gpgmelib"
+  ],
+  "packages": [
+    {
+      "name": "gpgme",
+      "manager": "dnf"
+    },
+    {
+      "name": "gpgme-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "gpgme-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libgpgme-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libgpgme11-dev",
+      "manager": "apt"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bblosc\\b",
+  "test_ok": [
+    "I need blosc installed.",
+    "blosc seems like a good dependency.",
+    "Error: blosc not found.",
+    "blosc"
+  ],
+  "test_fail": [
+    "bloscs",
+    "libblosc",
+    "blosclib"
+  ],
+  "packages": [
+    {
+      "name": "blosc-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "blosc-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "blosc-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libblosc-dev",
+      "manager": "apt"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bmongodb\\b",
+  "test_ok": [
+    "I need mongodb installed.",
+    "mongodb seems like a good dependency.",
+    "Error: mongodb not found.",
+    "mongodb"
+  ],
+  "test_fail": [
+    "mongodbs",
+    "libmongodb",
+    "mongodblib"
+  ],
+  "packages": [
+    {
+      "name": "mongodb",
+      "manager": "apt"
+    },
+    {
+      "name": "mongodb",
+      "manager": "dnf"
+    },
+    {
+      "name": "mongodb",
+      "manager": "zypper"
+    },
+    {
+      "name": "mongodb-tools",
+      "manager": "apk"
+    }
+  ]
+}

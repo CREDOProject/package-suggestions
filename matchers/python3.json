@@ -1,0 +1,40 @@
+{
+  "matcher": "^(?:.*)\\bpython3\\b",
+  "test_ok": [
+    "I need python3 installed.",
+    "python3 seems like a good dependency.",
+    "Error: python3 not found.",
+    "python3"
+  ],
+  "test_fail": [
+    "python3s",
+    "libpython3",
+    "python3lib"
+  ],
+  "packages": [
+    {
+      "name": "python3",
+      "manager": "apk"
+    },
+    {
+      "name": "python3",
+      "manager": "apt"
+    },
+    {
+      "name": "python3",
+      "manager": "dnf"
+    },
+    {
+      "name": "python3",
+      "manager": "zypper"
+    },
+    {
+      "name": "python34",
+      "manager": "dnf"
+    },
+    {
+      "name": "python36",
+      "manager": "dnf"
+    }
+  ]
+}

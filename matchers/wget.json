@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bwget\\b",
+  "test_ok": [
+    "I need wget installed.",
+    "wget seems like a good dependency.",
+    "Error: wget not found.",
+    "wget"
+  ],
+  "test_fail": [
+    "wgets",
+    "libwget",
+    "wgetlib"
+  ],
+  "packages": [
+    {
+      "name": "wget",
+      "manager": "apk"
+    },
+    {
+      "name": "wget",
+      "manager": "apt"
+    },
+    {
+      "name": "wget",
+      "manager": "dnf"
+    },
+    {
+      "name": "wget",
+      "manager": "zypper"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "matcher": "^(?:.*)\\bX11\\b",
+  "test_ok": [
+    "I need X11 installed.",
+    "X11 seems like a good dependency.",
+    "Error: X11 not found.",
+    "X11"
+  ],
+  "test_fail": [
+    "x11",
+    "X11s",
+    "libX11",
+    "X11lib"
+  ],
+  "packages": [
+    {
+      "name": "libX11-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libX11-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libx11-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libx11-dev",
+      "manager": "apt"
+    }
+  ]
+}

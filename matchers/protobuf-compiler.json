@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\bprotobuf-compiler\\b",
+  "test_ok": [
+    "I need protobuf-compiler installed.",
+    "protobuf-compiler seems like a good dependency.",
+    "Error: protobuf-compiler not found.",
+    "protobuf-compiler"
+  ],
+  "test_fail": [
+    "protobuf-compilers",
+    "libprotobuf-compiler",
+    "protobuf-compilerlib"
+  ],
+  "packages": [
+    {
+      "name": "libprotoc-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "protobuf-c-compiler",
+      "manager": "apk"
+    },
+    {
+      "name": "protobuf-compiler",
+      "manager": "apt"
+    },
+    {
+      "name": "protobuf-compiler",
+      "manager": "dnf"
+    },
+    {
+      "name": "protobuf-devel",
+      "manager": "zypper"
+    }
+  ]
+}

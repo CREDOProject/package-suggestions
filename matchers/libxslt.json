@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\blibxslt\\b",
+  "test_ok": [
+    "I need libxslt installed.",
+    "libxslt seems like a good dependency.",
+    "Error: libxslt not found.",
+    "libxslt"
+  ],
+  "test_fail": [
+    "libxslts",
+    "liblibxslt",
+    "libxsltlib"
+  ],
+  "packages": [
+    {
+      "name": "libxslt-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libxslt-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libxslt-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libxslt-devel",
+      "manager": "zypper"
+    }
+  ]
+}

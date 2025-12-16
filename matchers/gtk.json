@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bgtk\\b",
+  "test_ok": [
+    "I need gtk installed.",
+    "gtk seems like a good dependency.",
+    "Error: gtk not found.",
+    "gtk"
+  ],
+  "test_fail": [
+    "gtks",
+    "libgtk",
+    "gtklib"
+  ],
+  "packages": [
+    {
+      "name": "gtk+2.0-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "gtk2-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "gtk2-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libgtk2.0-dev",
+      "manager": "apt"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\bredland\\b",
+  "test_ok": [
+    "I need redland installed.",
+    "redland seems like a good dependency.",
+    "Error: redland not found.",
+    "redland"
+  ],
+  "test_fail": [
+    "redlands",
+    "libredland",
+    "redlandlib"
+  ],
+  "packages": [
+    {
+      "name": "librdf0-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libredland-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "redland",
+      "manager": "dnf"
+    },
+    {
+      "name": "redland-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "redland-devel",
+      "manager": "dnf"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\blibgit2\\b",
+  "test_ok": [
+    "I need libgit2 installed.",
+    "libgit2 seems like a good dependency.",
+    "Error: libgit2 not found.",
+    "libgit2"
+  ],
+  "test_fail": [
+    "libgit2s",
+    "liblibgit2",
+    "libgit2lib"
+  ],
+  "packages": [
+    {
+      "name": "libgit2-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libgit2-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libgit2-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libgit2-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libgit2_1.7-devel",
+      "manager": "dnf"
+    }
+  ]
+}

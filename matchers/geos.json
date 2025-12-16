@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bgeos\\b",
+  "test_ok": [
+    "I need geos installed.",
+    "geos seems like a good dependency.",
+    "Error: geos not found.",
+    "geos"
+  ],
+  "test_fail": [
+    "geoss",
+    "libgeos",
+    "geoslib"
+  ],
+  "packages": [
+    {
+      "name": "geos-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "geos-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "geos-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libgeos-dev",
+      "manager": "apt"
+    }
+  ]
+}

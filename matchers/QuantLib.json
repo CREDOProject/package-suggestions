@@ -1,0 +1,25 @@
+{
+  "matcher": "^(?:.*)\\bQuantLib\\b",
+  "test_ok": [
+    "I need QuantLib installed.",
+    "QuantLib seems like a good dependency.",
+    "Error: QuantLib not found.",
+    "QuantLib"
+  ],
+  "test_fail": [
+    "quantlib",
+    "QuantLibs",
+    "libQuantLib",
+    "QuantLiblib"
+  ],
+  "packages": [
+    {
+      "name": "QuantLib-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libquantlib0-dev",
+      "manager": "apt"
+    }
+  ]
+}

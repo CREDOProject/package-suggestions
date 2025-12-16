@@ -1,0 +1,28 @@
+{
+  "matcher": "^(?:.*)\\budunits-2\\b",
+  "test_ok": [
+    "I need udunits-2 installed.",
+    "udunits-2 seems like a good dependency.",
+    "Error: udunits-2 not found.",
+    "udunits-2"
+  ],
+  "test_fail": [
+    "udunits-2s",
+    "libudunits-2",
+    "udunits-2lib"
+  ],
+  "packages": [
+    {
+      "name": "libudunits2-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "udunits-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "udunits2-devel",
+      "manager": "dnf"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "matcher": "^(?:.*)\\bsaint\\b(?:.*)$",
+  "test_ok": [
+    "I need saint installed.",
+    "saint seems like a good dependency.",
+    "Error: saint not found.",
+    "saint"
+  ],
+  "test_fail": [
+    "saints",
+    "libsaint",
+    "saintlib"
+  ],
+  "packages": [
+    {
+      "name": "saint",
+      "manager": "apt"
+    }
+  ]
+}

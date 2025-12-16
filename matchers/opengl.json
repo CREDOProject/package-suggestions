@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bopengl\\b",
+  "test_ok": [
+    "I need opengl installed.",
+    "opengl seems like a good dependency.",
+    "Error: opengl not found.",
+    "opengl"
+  ],
+  "test_fail": [
+    "opengls",
+    "libopengl",
+    "opengllib"
+  ],
+  "packages": [
+    {
+      "name": "Mesa-libGL-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libgl1-mesa-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "mesa-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "mesa-libGL-devel",
+      "manager": "dnf"
+    }
+  ]
+}

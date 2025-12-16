@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bhaveged\\b",
+  "test_ok": [
+    "I need haveged installed.",
+    "haveged seems like a good dependency.",
+    "Error: haveged not found.",
+    "haveged"
+  ],
+  "test_fail": [
+    "havegeds",
+    "libhaveged",
+    "havegedlib"
+  ],
+  "packages": [
+    {
+      "name": "haveged",
+      "manager": "apt"
+    },
+    {
+      "name": "haveged",
+      "manager": "zypper"
+    },
+    {
+      "name": "haveged-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "haveged-devel",
+      "manager": "dnf"
+    }
+  ]
+}

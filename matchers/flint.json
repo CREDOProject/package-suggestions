@@ -1,0 +1,28 @@
+{
+  "matcher": "^(?:.*)\\bflint\\b",
+  "test_ok": [
+    "I need flint installed.",
+    "flint seems like a good dependency.",
+    "Error: flint not found.",
+    "flint"
+  ],
+  "test_fail": [
+    "flints",
+    "libflint",
+    "flintlib"
+  ],
+  "packages": [
+    {
+      "name": "flint-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "flint-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libflint-dev",
+      "manager": "apt"
+    }
+  ]
+}

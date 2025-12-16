@@ -1,0 +1,52 @@
+{
+  "matcher": "^(?:.*)\\bgdal\\b",
+  "test_ok": [
+    "I need gdal installed.",
+    "gdal seems like a good dependency.",
+    "Error: gdal not found.",
+    "gdal"
+  ],
+  "test_fail": [
+    "gdals",
+    "libgdal",
+    "gdallib"
+  ],
+  "packages": [
+    {
+      "name": "gdal",
+      "manager": "dnf"
+    },
+    {
+      "name": "gdal",
+      "manager": "zypper"
+    },
+    {
+      "name": "gdal-bin",
+      "manager": "apt"
+    },
+    {
+      "name": "gdal-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "gdal-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "gdal-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "gdal-tools",
+      "manager": "apk"
+    },
+    {
+      "name": "libgdal-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "sqlite-devel",
+      "manager": "dnf"
+    }
+  ]
+}

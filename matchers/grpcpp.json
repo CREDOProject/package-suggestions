@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\blibgrpc(\\+\\+)?\\b(?:.*)$",
+  "test_ok": [
+    "I need libgrpc installed.",
+    "libgrpc seems like a good dependency.",
+    "Error: libgrpc not found.",
+    "libgrpc"
+  ],
+  "test_fail": [
+    "libgrpcs",
+    "liblibgrpc",
+    "libgrpclib"
+  ],
+  "packages": [
+    {
+      "name": "grpc-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "grpc-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "grpc-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libgrpc++-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "pkgconf",
+      "manager": "dnf"
+    }
+  ]
+}

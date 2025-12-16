@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bberkeleydb\\b",
+  "test_ok": [
+    "I need berkeleydb installed.",
+    "berkeleydb seems like a good dependency.",
+    "Error: berkeleydb not found.",
+    "berkeleydb"
+  ],
+  "test_fail": [
+    "berkeleydbs",
+    "libberkeleydb",
+    "berkeleydblib"
+  ],
+  "packages": [
+    {
+      "name": "db-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libdb-4_8-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libdb-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libdb-devel",
+      "manager": "dnf"
+    }
+  ]
+}

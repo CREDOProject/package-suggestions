@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\blatex\\b",
+  "test_ok": [
+    "I need latex installed.",
+    "latex seems like a good dependency.",
+    "Error: latex not found.",
+    "latex"
+  ],
+  "test_fail": [
+    "latexs",
+    "liblatex",
+    "latexlib"
+  ],
+  "packages": [
+    {
+      "name": "texlive",
+      "manager": "apk"
+    },
+    {
+      "name": "texlive",
+      "manager": "apt"
+    },
+    {
+      "name": "texlive",
+      "manager": "dnf"
+    },
+    {
+      "name": "texlive",
+      "manager": "zypper"
+    }
+  ]
+}

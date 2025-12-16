@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bzeromq\\b",
+  "test_ok": [
+    "I need zeromq installed.",
+    "zeromq seems like a good dependency.",
+    "Error: zeromq not found.",
+    "zeromq"
+  ],
+  "test_fail": [
+    "zeromqs",
+    "libzeromq",
+    "zeromqlib"
+  ],
+  "packages": [
+    {
+      "name": "libzmq3-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "zeromq-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "zeromq-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "zeromq-devel",
+      "manager": "zypper"
+    }
+  ]
+}

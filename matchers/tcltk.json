@@ -1,0 +1,48 @@
+{
+  "matcher": "^(?:.*)\\btcltk\\b(?:.*)$",
+  "test_ok": [
+    "I need tcltk installed.",
+    "tcltk seems like a good dependency.",
+    "Error: tcltk not found.",
+    "tcltk"
+  ],
+  "test_fail": [
+    "tcltks",
+    "libtcltk",
+    "tcltklib"
+  ],
+  "packages": [
+    {
+      "name": "tcl",
+      "manager": "apk"
+    },
+    {
+      "name": "tcl",
+      "manager": "apt"
+    },
+    {
+      "name": "tcl",
+      "manager": "dnf"
+    },
+    {
+      "name": "tcl",
+      "manager": "zypper"
+    },
+    {
+      "name": "tk",
+      "manager": "apk"
+    },
+    {
+      "name": "tk",
+      "manager": "apt"
+    },
+    {
+      "name": "tk",
+      "manager": "dnf"
+    },
+    {
+      "name": "tk",
+      "manager": "zypper"
+    }
+  ]
+}

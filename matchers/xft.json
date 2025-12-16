@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bxft\\b",
+  "test_ok": [
+    "I need xft installed.",
+    "xft seems like a good dependency.",
+    "Error: xft not found.",
+    "xft"
+  ],
+  "test_fail": [
+    "xfts",
+    "libxft",
+    "xftlib"
+  ],
+  "packages": [
+    {
+      "name": "libXft-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libXft-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libxft-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libxft-dev",
+      "manager": "apt"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\blibavfilter\\b",
+  "test_ok": [
+    "I need libavfilter installed.",
+    "libavfilter seems like a good dependency.",
+    "Error: libavfilter not found.",
+    "libavfilter"
+  ],
+  "test_fail": [
+    "libavfilters",
+    "liblibavfilter",
+    "libavfilterlib"
+  ],
+  "packages": [
+    {
+      "name": "ffmpeg-4-libavfilter-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "ffmpeg-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "ffmpeg-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libavfilter-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libavfilter-free-devel",
+      "manager": "dnf"
+    }
+  ]
+}

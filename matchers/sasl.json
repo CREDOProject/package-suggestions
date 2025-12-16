@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bsasl\\b",
+  "test_ok": [
+    "I need sasl installed.",
+    "sasl seems like a good dependency.",
+    "Error: sasl not found.",
+    "sasl"
+  ],
+  "test_fail": [
+    "sasls",
+    "libsasl",
+    "sasllib"
+  ],
+  "packages": [
+    {
+      "name": "cyrus-sasl-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "cyrus-sasl-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "cyrus-sasl-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libsasl2-dev",
+      "manager": "apt"
+    }
+  ]
+}

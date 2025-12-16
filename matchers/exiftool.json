@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bexiftool\\b",
+  "test_ok": [
+    "I need exiftool installed.",
+    "exiftool seems like a good dependency.",
+    "Error: exiftool not found.",
+    "exiftool"
+  ],
+  "test_fail": [
+    "exiftools",
+    "libexiftool",
+    "exiftoollib"
+  ],
+  "packages": [
+    {
+      "name": "libimage-exiftool-perl",
+      "manager": "apt"
+    },
+    {
+      "name": "perl-Image-ExifTool",
+      "manager": "dnf"
+    },
+    {
+      "name": "perl-Image-ExifTool",
+      "manager": "zypper"
+    },
+    {
+      "name": "perl-image-exiftool",
+      "manager": "apk"
+    }
+  ]
+}

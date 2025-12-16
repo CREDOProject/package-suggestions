@@ -1,0 +1,24 @@
+{
+  "matcher": "^(?:.*)\\bcoin-orclp\\b",
+  "test_ok": [
+    "I need coin-orclp installed.",
+    "coin-orclp seems like a good dependency.",
+    "Error: coin-orclp not found.",
+    "coin-orclp"
+  ],
+  "test_fail": [
+    "coin-orclps",
+    "libcoin-orclp",
+    "coin-orclplib"
+  ],
+  "packages": [
+    {
+      "name": "coin-or-Clp-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "coinor-libclp-dev",
+      "manager": "apt"
+    }
+  ]
+}

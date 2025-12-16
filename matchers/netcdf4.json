@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bnetcdf\\b",
+  "test_ok": [
+    "I need netcdf installed.",
+    "netcdf seems like a good dependency.",
+    "Error: netcdf not found.",
+    "netcdf"
+  ],
+  "test_fail": [
+    "netcdfs",
+    "libnetcdf",
+    "netcdflib"
+  ],
+  "packages": [
+    {
+      "name": "libnetcdf-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "netcdf-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "netcdf-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "netcdf-devel",
+      "manager": "zypper"
+    }
+  ]
+}

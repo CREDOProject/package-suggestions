@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\blibcurl\\b",
+  "test_ok": [
+    "I need libcurl installed.",
+    "libcurl seems like a good dependency.",
+    "Error: libcurl not found.",
+    "libcurl"
+  ],
+  "test_fail": [
+    "libcurls",
+    "liblibcurl",
+    "libcurllib"
+  ],
+  "packages": [
+    {
+      "name": "curl-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libcurl-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libcurl-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libcurl4-openssl-dev",
+      "manager": "apt"
+    }
+  ]
+}

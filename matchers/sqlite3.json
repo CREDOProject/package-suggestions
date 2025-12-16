@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bsqlite3\\b",
+  "test_ok": [
+    "I need sqlite3 installed.",
+    "sqlite3 seems like a good dependency.",
+    "Error: sqlite3 not found.",
+    "sqlite3"
+  ],
+  "test_fail": [
+    "sqlite3s",
+    "libsqlite3",
+    "sqlite3lib"
+  ],
+  "packages": [
+    {
+      "name": "libsqlite3-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "sqlite-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "sqlite-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "sqlite3-devel",
+      "manager": "zypper"
+    }
+  ]
+}

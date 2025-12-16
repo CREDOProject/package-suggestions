@@ -1,0 +1,24 @@
+{
+  "matcher": "^(?:.*)\\bqgis\\b",
+  "test_ok": [
+    "I need qgis installed.",
+    "qgis seems like a good dependency.",
+    "Error: qgis not found.",
+    "qgis"
+  ],
+  "test_fail": [
+    "qgiss",
+    "libqgis",
+    "qgislib"
+  ],
+  "packages": [
+    {
+      "name": "libqgis-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "qgis-devel",
+      "manager": "dnf"
+    }
+  ]
+}

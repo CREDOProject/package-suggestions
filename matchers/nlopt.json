@@ -1,0 +1,15 @@
+{
+  "matcher": "^(?:.*)\\bnlopt\\b",
+  "test_ok": [
+    "I need nlopt installed.",
+    "nlopt seems like a good dependency.",
+    "Error: nlopt not found.",
+    "nlopt"
+  ],
+  "test_fail": [
+    "nlopts",
+    "libnlopt",
+    "nloptlib"
+  ],
+  "packages": []
+}

@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\blibprotobuf\\b",
+  "test_ok": [
+    "I need libprotobuf installed.",
+    "libprotobuf seems like a good dependency.",
+    "Error: libprotobuf not found.",
+    "libprotobuf"
+  ],
+  "test_fail": [
+    "libprotobufs",
+    "liblibprotobuf",
+    "libprotobuflib"
+  ],
+  "packages": [
+    {
+      "name": "libprotobuf-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "protobuf",
+      "manager": "dnf"
+    },
+    {
+      "name": "protobuf-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "protobuf-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "protobuf-devel",
+      "manager": "zypper"
+    }
+  ]
+}

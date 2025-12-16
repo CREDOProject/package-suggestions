@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bautomake\\b",
+  "test_ok": [
+    "I need automake installed.",
+    "automake seems like a good dependency.",
+    "Error: automake not found.",
+    "automake"
+  ],
+  "test_fail": [
+    "automakes",
+    "libautomake",
+    "automakelib"
+  ],
+  "packages": [
+    {
+      "name": "automake",
+      "manager": "apk"
+    },
+    {
+      "name": "automake",
+      "manager": "apt"
+    },
+    {
+      "name": "automake",
+      "manager": "dnf"
+    },
+    {
+      "name": "automake",
+      "manager": "zypper"
+    }
+  ]
+}

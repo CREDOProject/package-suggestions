@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\blibbz2\\b",
+  "test_ok": [
+    "I need libbz2 installed.",
+    "libbz2 seems like a good dependency.",
+    "Error: libbz2 not found.",
+    "libbz2"
+  ],
+  "test_fail": [
+    "libbz2s",
+    "liblibbz2",
+    "libbz2lib"
+  ],
+  "packages": [
+    {
+      "name": "bzip2-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "bzip2-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libbz2-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libbz2-devel",
+      "manager": "zypper"
+    }
+  ]
+}

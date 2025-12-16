@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\blibjpeg\\b",
+  "test_ok": [
+    "I need libjpeg installed.",
+    "libjpeg seems like a good dependency.",
+    "Error: libjpeg not found.",
+    "libjpeg"
+  ],
+  "test_fail": [
+    "libjpegs",
+    "liblibjpeg",
+    "libjpeglib"
+  ],
+  "packages": [
+    {
+      "name": "jpeg-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libjpeg-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libjpeg-turbo-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libjpeg8-devel",
+      "manager": "zypper"
+    }
+  ]
+}

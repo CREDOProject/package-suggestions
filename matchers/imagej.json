@@ -1,0 +1,28 @@
+{
+  "matcher": "^(?:.*)\\bimagej\\b",
+  "test_ok": [
+    "I need imagej installed.",
+    "imagej seems like a good dependency.",
+    "Error: imagej not found.",
+    "imagej"
+  ],
+  "test_fail": [
+    "imagejs",
+    "libimagej",
+    "imagejlib"
+  ],
+  "packages": [
+    {
+      "name": "imagej",
+      "manager": "apt"
+    },
+    {
+      "name": "imagej",
+      "manager": "dnf"
+    },
+    {
+      "name": "imagej",
+      "manager": "zypper"
+    }
+  ]
+}

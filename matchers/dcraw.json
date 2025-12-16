@@ -1,0 +1,28 @@
+{
+  "matcher": "^(?:.*)\\bdcraw\\b",
+  "test_ok": [
+    "I need dcraw installed.",
+    "dcraw seems like a good dependency.",
+    "Error: dcraw not found.",
+    "dcraw"
+  ],
+  "test_fail": [
+    "dcraws",
+    "libdcraw",
+    "dcrawlib"
+  ],
+  "packages": [
+    {
+      "name": "dcraw",
+      "manager": "apt"
+    },
+    {
+      "name": "dcraw",
+      "manager": "dnf"
+    },
+    {
+      "name": "dcraw",
+      "manager": "zypper"
+    }
+  ]
+}

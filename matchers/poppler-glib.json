@@ -1,0 +1,33 @@
+{
+  "matcher": "^(?:.*)\\bPopplerglib\\b",
+  "test_ok": [
+    "I need Popplerglib installed.",
+    "Popplerglib seems like a good dependency.",
+    "Error: Popplerglib not found.",
+    "Popplerglib"
+  ],
+  "test_fail": [
+    "popplerglib",
+    "Popplerglibs",
+    "libPopplerglib",
+    "Popplergliblib"
+  ],
+  "packages": [
+    {
+      "name": "libpoppler-glib-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libpoppler-glib-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "poppler-glib",
+      "manager": "apk"
+    },
+    {
+      "name": "poppler-glib-devel",
+      "manager": "dnf"
+    }
+  ]
+}

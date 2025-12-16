@@ -1,0 +1,28 @@
+{
+  "matcher": "^(?:.*)\\bbwidget\\b",
+  "test_ok": [
+    "I need bwidget installed.",
+    "bwidget seems like a good dependency.",
+    "Error: bwidget not found.",
+    "bwidget"
+  ],
+  "test_fail": [
+    "bwidgets",
+    "libbwidget",
+    "bwidgetlib"
+  ],
+  "packages": [
+    {
+      "name": "bwidget",
+      "manager": "apt"
+    },
+    {
+      "name": "bwidget",
+      "manager": "dnf"
+    },
+    {
+      "name": "bwidget",
+      "manager": "zypper"
+    }
+  ]
+}

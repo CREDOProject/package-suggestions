@@ -1,0 +1,28 @@
+{
+  "matcher": "^(?:.*)\\bopenbabel\\b",
+  "test_ok": [
+    "I need openbabel installed.",
+    "openbabel seems like a good dependency.",
+    "Error: openbabel not found.",
+    "openbabel"
+  ],
+  "test_fail": [
+    "openbabels",
+    "libopenbabel",
+    "openbabellib"
+  ],
+  "packages": [
+    {
+      "name": "libopenbabel-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "openbabel-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "openbabel-devel",
+      "manager": "zypper"
+    }
+  ]
+}

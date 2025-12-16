@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bharfbuzz\\b",
+  "test_ok": [
+    "I need harfbuzz installed.",
+    "harfbuzz seems like a good dependency.",
+    "Error: harfbuzz not found.",
+    "harfbuzz"
+  ],
+  "test_fail": [
+    "harfbuzzs",
+    "libharfbuzz",
+    "harfbuzzlib"
+  ],
+  "packages": [
+    {
+      "name": "harfbuzz-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "harfbuzz-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "harfbuzz-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libharfbuzz-dev",
+      "manager": "apt"
+    }
+  ]
+}

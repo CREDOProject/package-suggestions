@@ -1,0 +1,24 @@
+{
+  "matcher": "^(?:.*)\\bsaga\\b",
+  "test_ok": [
+    "I need saga installed.",
+    "saga seems like a good dependency.",
+    "Error: saga not found.",
+    "saga"
+  ],
+  "test_fail": [
+    "sagas",
+    "libsaga",
+    "sagalib"
+  ],
+  "packages": [
+    {
+      "name": "saga",
+      "manager": "apt"
+    },
+    {
+      "name": "saga-devel",
+      "manager": "dnf"
+    }
+  ]
+}

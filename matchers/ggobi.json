@@ -1,0 +1,24 @@
+{
+  "matcher": "^(?:.*)\\bggobi\\b",
+  "test_ok": [
+    "I need ggobi installed.",
+    "ggobi seems like a good dependency.",
+    "Error: ggobi not found.",
+    "ggobi"
+  ],
+  "test_fail": [
+    "ggobis",
+    "libggobi",
+    "ggobilib"
+  ],
+  "packages": [
+    {
+      "name": "ggobi",
+      "manager": "apt"
+    },
+    {
+      "name": "ggobi-devel",
+      "manager": "dnf"
+    }
+  ]
+}

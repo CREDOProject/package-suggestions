@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bmpfr\\b",
+  "test_ok": [
+    "I need mpfr installed.",
+    "mpfr seems like a good dependency.",
+    "Error: mpfr not found.",
+    "mpfr"
+  ],
+  "test_fail": [
+    "mpfrs",
+    "libmpfr",
+    "mpfrlib"
+  ],
+  "packages": [
+    {
+      "name": "libmpfr-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "mpfr-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "mpfr-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "mpfr-devel",
+      "manager": "zypper"
+    }
+  ]
+}

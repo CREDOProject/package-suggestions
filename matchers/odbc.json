@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bodbc\\b",
+  "test_ok": [
+    "I need odbc installed.",
+    "odbc seems like a good dependency.",
+    "Error: odbc not found.",
+    "odbc"
+  ],
+  "test_fail": [
+    "odbcs",
+    "libodbc",
+    "odbclib"
+  ],
+  "packages": [
+    {
+      "name": "unixODBC-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "unixODBC-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "unixodbc-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "unixodbc-dev",
+      "manager": "apt"
+    }
+  ]
+}

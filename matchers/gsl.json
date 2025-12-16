@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\blibgsl\\b",
+  "test_ok": [
+    "I need libgsl installed.",
+    "libgsl seems like a good dependency.",
+    "Error: libgsl not found.",
+    "libgsl"
+  ],
+  "test_fail": [
+    "libgsls",
+    "liblibgsl",
+    "libgsllib"
+  ],
+  "packages": [
+    {
+      "name": "gsl-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "gsl-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "gsl-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libgsl0-dev",
+      "manager": "apt"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "matcher": "^(?:.*)\\bbowtie2\\b",
+  "test_ok": [
+    "I need bowtie2 installed.",
+    "bowtie2 seems like a good dependency.",
+    "Error: bowtie2 not found.",
+    "bowtie2"
+  ],
+  "test_fail": [
+    "bowtie2s",
+    "libbowtie2",
+    "bowtie2lib"
+  ],
+  "packages": [
+    {
+      "name": "bowtie2",
+      "manager": "apt"
+    },
+    {
+      "name": "bowtie2",
+      "manager": "dnf"
+    }
+  ]
+}

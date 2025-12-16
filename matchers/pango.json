@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bpango\\b",
+  "test_ok": [
+    "I need pango installed.",
+    "pango seems like a good dependency.",
+    "Error: pango not found.",
+    "pango"
+  ],
+  "test_fail": [
+    "pangos",
+    "libpango",
+    "pangolib"
+  ],
+  "packages": [
+    {
+      "name": "libpango1.0-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "pango-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "pango-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "pango-devel",
+      "manager": "zypper"
+    }
+  ]
+}

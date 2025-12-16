@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\blibbsd\\b",
+  "test_ok": [
+    "I need libbsd installed.",
+    "libbsd seems like a good dependency.",
+    "Error: libbsd not found.",
+    "libbsd"
+  ],
+  "test_fail": [
+    "libbsds",
+    "liblibbsd",
+    "libbsdlib"
+  ],
+  "packages": [
+    {
+      "name": "libbsd-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libbsd-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libbsd-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libbsd-devel",
+      "manager": "zypper"
+    }
+  ]
+}

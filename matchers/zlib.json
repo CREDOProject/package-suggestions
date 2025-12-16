@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\bzlib\\b",
+  "test_ok": [
+    "I need zlib installed.",
+    "zlib seems like a good dependency.",
+    "Error: zlib not found.",
+    "zlib"
+  ],
+  "test_fail": [
+    "zlibs",
+    "libzlib",
+    "zliblib"
+  ],
+  "packages": [
+    {
+      "name": "zlib-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "zlib-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "zlib-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "zlib-ng-compat-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "zlib1g-dev",
+      "manager": "apt"
+    }
+  ]
+}

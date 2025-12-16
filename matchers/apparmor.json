@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bapparmor\\b",
+  "test_ok": [
+    "I need apparmor installed.",
+    "apparmor seems like a good dependency.",
+    "Error: apparmor not found.",
+    "apparmor"
+  ],
+  "test_fail": [
+    "apparmors",
+    "libapparmor",
+    "apparmorlib"
+  ],
+  "packages": [
+    {
+      "name": "libapparmor",
+      "manager": "apk"
+    },
+    {
+      "name": "libapparmor-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libapparmor-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libapparmor-devel",
+      "manager": "zypper"
+    }
+  ]
+}

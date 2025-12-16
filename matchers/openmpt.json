@@ -1,0 +1,48 @@
+{
+  "matcher": "^(?:.*)\\bopenmpt\\b",
+  "test_ok": [
+    "I need openmpt installed.",
+    "openmpt seems like a good dependency.",
+    "Error: openmpt not found.",
+    "openmpt"
+  ],
+  "test_fail": [
+    "openmpts",
+    "libopenmpt",
+    "openmptlib"
+  ],
+  "packages": [
+    {
+      "name": "libopenmpt-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libopenmpt-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libopenmpt-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libopenmpt-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "portaudio-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "portaudio-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "portaudio-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "portaudio19-dev",
+      "manager": "apt"
+    }
+  ]
+}

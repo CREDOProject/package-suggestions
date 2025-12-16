@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\blibsndfile\\b",
+  "test_ok": [
+    "I need libsndfile installed.",
+    "libsndfile seems like a good dependency.",
+    "Error: libsndfile not found.",
+    "libsndfile"
+  ],
+  "test_fail": [
+    "libsndfiles",
+    "liblibsndfile",
+    "libsndfilelib"
+  ],
+  "packages": [
+    {
+      "name": "libsndfile",
+      "manager": "dnf"
+    },
+    {
+      "name": "libsndfile-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libsndfile-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libsndfile-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libsndfile1-dev",
+      "manager": "apt"
+    }
+  ]
+}

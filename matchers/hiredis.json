@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bhiredis\\b",
+  "test_ok": [
+    "I need hiredis installed.",
+    "hiredis seems like a good dependency.",
+    "Error: hiredis not found.",
+    "hiredis"
+  ],
+  "test_fail": [
+    "hirediss",
+    "libhiredis",
+    "hiredislib"
+  ],
+  "packages": [
+    {
+      "name": "hiredis-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "hiredis-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "hiredis-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libhiredis-dev",
+      "manager": "apt"
+    }
+  ]
+}

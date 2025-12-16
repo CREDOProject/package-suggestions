@@ -1,0 +1,20 @@
+{
+  "matcher": "^(?:.*)\\bnvcc\\b",
+  "test_ok": [
+    "I need nvcc installed.",
+    "nvcc seems like a good dependency.",
+    "Error: nvcc not found.",
+    "nvcc"
+  ],
+  "test_fail": [
+    "nvccs",
+    "libnvcc",
+    "nvcclib"
+  ],
+  "packages": [
+    {
+      "name": "nvidia-cuda-dev",
+      "manager": "apt"
+    }
+  ]
+}

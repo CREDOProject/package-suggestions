@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\blibwebp\\b",
+  "test_ok": [
+    "I need libwebp installed.",
+    "libwebp seems like a good dependency.",
+    "Error: libwebp not found.",
+    "libwebp"
+  ],
+  "test_fail": [
+    "libwebps",
+    "liblibwebp",
+    "libwebplib"
+  ],
+  "packages": [
+    {
+      "name": "libwebp",
+      "manager": "dnf"
+    },
+    {
+      "name": "libwebp-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libwebp-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libwebp-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libwebp-devel",
+      "manager": "zypper"
+    }
+  ]
+}

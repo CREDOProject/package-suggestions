@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bgmp\\b",
+  "test_ok": [
+    "I need gmp installed.",
+    "gmp seems like a good dependency.",
+    "Error: gmp not found.",
+    "gmp"
+  ],
+  "test_fail": [
+    "gmps",
+    "libgmp",
+    "gmplib"
+  ],
+  "packages": [
+    {
+      "name": "gmp-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "gmp-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "gmp-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libgmp3-dev",
+      "manager": "apt"
+    }
+  ]
+}

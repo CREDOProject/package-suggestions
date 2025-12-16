@@ -1,0 +1,40 @@
+{
+  "matcher": "^(?:.*)\\bmysql.*server\\b",
+  "test_ok": [
+    "I need mysqlserver installed.",
+    "mysqlserver seems like a good dependency.",
+    "Error: mysqlserver not found.",
+    "mysqlserver"
+  ],
+  "test_fail": [
+    "mysqlservers",
+    "libmysqlserver",
+    "mysqlserverlib"
+  ],
+  "packages": [
+    {
+      "name": "mariadb",
+      "manager": "apk"
+    },
+    {
+      "name": "mariadb",
+      "manager": "dnf"
+    },
+    {
+      "name": "mariadb",
+      "manager": "zypper"
+    },
+    {
+      "name": "mariadb-server",
+      "manager": "apt"
+    },
+    {
+      "name": "mysql",
+      "manager": "dnf"
+    },
+    {
+      "name": "mysql-server",
+      "manager": "apt"
+    }
+  ]
+}

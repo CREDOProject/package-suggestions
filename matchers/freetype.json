@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bfreetype\\b",
+  "test_ok": [
+    "I need freetype installed.",
+    "freetype seems like a good dependency.",
+    "Error: freetype not found.",
+    "freetype"
+  ],
+  "test_fail": [
+    "freetypes",
+    "libfreetype",
+    "freetypelib"
+  ],
+  "packages": [
+    {
+      "name": "freetype-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "freetype-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "freetype2-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libfreetype6-dev",
+      "manager": "apt"
+    }
+  ]
+}

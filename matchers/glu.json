@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bglu\\b",
+  "test_ok": [
+    "I need glu installed.",
+    "glu seems like a good dependency.",
+    "Error: glu not found.",
+    "glu"
+  ],
+  "test_fail": [
+    "glus",
+    "libglu",
+    "glulib"
+  ],
+  "packages": [
+    {
+      "name": "glu-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "glu-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libglu1-mesa-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "mesa-libGLU-devel",
+      "manager": "dnf"
+    }
+  ]
+}

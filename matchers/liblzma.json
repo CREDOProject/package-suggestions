@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bliblzma\\b",
+  "test_ok": [
+    "I need liblzma installed.",
+    "liblzma seems like a good dependency.",
+    "Error: liblzma not found.",
+    "liblzma"
+  ],
+  "test_fail": [
+    "liblzmas",
+    "libliblzma",
+    "liblzmalib"
+  ],
+  "packages": [
+    {
+      "name": "liblzma-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "xz-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "xz-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "xz-devel",
+      "manager": "zypper"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\blibrsvg2\\b",
+  "test_ok": [
+    "I need librsvg2 installed.",
+    "librsvg2 seems like a good dependency.",
+    "Error: librsvg2 not found.",
+    "librsvg2"
+  ],
+  "test_fail": [
+    "librsvg2s",
+    "liblibrsvg2",
+    "librsvg2lib"
+  ],
+  "packages": [
+    {
+      "name": "librsvg-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "librsvg-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "librsvg2-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "librsvg2-devel",
+      "manager": "dnf"
+    }
+  ]
+}

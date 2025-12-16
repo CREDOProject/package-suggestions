@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\bopenmpi\\b",
+  "test_ok": [
+    "I need openmpi installed.",
+    "openmpi seems like a good dependency.",
+    "Error: openmpi not found.",
+    "openmpi"
+  ],
+  "test_fail": [
+    "openmpis",
+    "libopenmpi",
+    "openmpilib"
+  ],
+  "packages": [
+    {
+      "name": "libopenmpi-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "openmpi-1.10-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "openmpi-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "openmpi-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "openmpi-devel",
+      "manager": "zypper"
+    }
+  ]
+}

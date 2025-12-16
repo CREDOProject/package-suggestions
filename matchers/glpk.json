@@ -1,0 +1,28 @@
+{
+  "matcher": "^(?:.*)\\bglpk\\b",
+  "test_ok": [
+    "I need glpk installed.",
+    "glpk seems like a good dependency.",
+    "Error: glpk not found.",
+    "glpk"
+  ],
+  "test_fail": [
+    "glpks",
+    "libglpk",
+    "glpklib"
+  ],
+  "packages": [
+    {
+      "name": "glpk-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "glpk-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libglpk-dev",
+      "manager": "apt"
+    }
+  ]
+}

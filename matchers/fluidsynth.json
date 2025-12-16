@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bfluidsynth\\b",
+  "test_ok": [
+    "I need fluidsynth installed.",
+    "fluidsynth seems like a good dependency.",
+    "Error: fluidsynth not found.",
+    "fluidsynth"
+  ],
+  "test_fail": [
+    "fluidsynths",
+    "libfluidsynth",
+    "fluidsynthlib"
+  ],
+  "packages": [
+    {
+      "name": "fluidsynth-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "fluidsynth-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "fluidsynth-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libfluidsynth-dev",
+      "manager": "apt"
+    }
+  ]
+}

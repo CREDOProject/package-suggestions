@@ -1,0 +1,20 @@
+{
+  "matcher": "^(?:.*)\\bjags\\b",
+  "test_ok": [
+    "I need jags installed.",
+    "jags seems like a good dependency.",
+    "Error: jags not found.",
+    "jags"
+  ],
+  "test_fail": [
+    "jagss",
+    "libjags",
+    "jagslib"
+  ],
+  "packages": [
+    {
+      "name": "jags",
+      "manager": "apt"
+    }
+  ]
+}

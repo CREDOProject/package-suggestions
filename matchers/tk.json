@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\btk\\b",
+  "test_ok": [
+    "I need tk installed.",
+    "tk seems like a good dependency.",
+    "Error: tk not found.",
+    "tk"
+  ],
+  "test_fail": [
+    "tks",
+    "libtk",
+    "tklib"
+  ],
+  "packages": [
+    {
+      "name": "tk-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "tk-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "tk-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "tk-devel",
+      "manager": "zypper"
+    }
+  ]
+}

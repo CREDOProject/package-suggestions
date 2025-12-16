@@ -1,0 +1,40 @@
+{
+  "matcher": "^(?:.*)\\bopencl\\b",
+  "test_ok": [
+    "I need opencl installed.",
+    "opencl seems like a good dependency.",
+    "Error: opencl not found.",
+    "opencl"
+  ],
+  "test_fail": [
+    "opencls",
+    "libopencl",
+    "opencllib"
+  ],
+  "packages": [
+    {
+      "name": "libOpenCL1",
+      "manager": "zypper"
+    },
+    {
+      "name": "ocl-icd",
+      "manager": "dnf"
+    },
+    {
+      "name": "ocl-icd-opencl-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "opencl-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "opencl-headers",
+      "manager": "dnf"
+    },
+    {
+      "name": "opencl-headers",
+      "manager": "zypper"
+    }
+  ]
+}

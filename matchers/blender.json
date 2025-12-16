@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bblender\\b",
+  "test_ok": [
+    "I need blender installed.",
+    "blender seems like a good dependency.",
+    "Error: blender not found.",
+    "blender"
+  ],
+  "test_fail": [
+    "blenders",
+    "libblender",
+    "blenderlib"
+  ],
+  "packages": [
+    {
+      "name": "blender",
+      "manager": "apk"
+    },
+    {
+      "name": "blender",
+      "manager": "apt"
+    },
+    {
+      "name": "blender",
+      "manager": "dnf"
+    },
+    {
+      "name": "blender",
+      "manager": "zypper"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bfribidi\\b",
+  "test_ok": [
+    "I need fribidi installed.",
+    "fribidi seems like a good dependency.",
+    "Error: fribidi not found.",
+    "fribidi"
+  ],
+  "test_fail": [
+    "fribidis",
+    "libfribidi",
+    "fribidilib"
+  ],
+  "packages": [
+    {
+      "name": "fribidi-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "fribidi-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "fribidi-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libfribidi-dev",
+      "manager": "apt"
+    }
+  ]
+}

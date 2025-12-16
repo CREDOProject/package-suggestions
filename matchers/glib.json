@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bglib\\b",
+  "test_ok": [
+    "I need glib installed.",
+    "glib seems like a good dependency.",
+    "Error: glib not found.",
+    "glib"
+  ],
+  "test_fail": [
+    "glibs",
+    "libglib",
+    "gliblib"
+  ],
+  "packages": [
+    {
+      "name": "glib-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "glib2-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "glib2-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libglib2.0-dev",
+      "manager": "apt"
+    }
+  ]
+}

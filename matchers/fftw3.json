@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bfftw\\b",
+  "test_ok": [
+    "I need fftw installed.",
+    "fftw seems like a good dependency.",
+    "Error: fftw not found.",
+    "fftw"
+  ],
+  "test_fail": [
+    "fftws",
+    "libfftw",
+    "fftwlib"
+  ],
+  "packages": [
+    {
+      "name": "fftw-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "fftw-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "fftw3-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libfftw3-dev",
+      "manager": "apt"
+    }
+  ]
+}

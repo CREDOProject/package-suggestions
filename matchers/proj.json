@@ -1,0 +1,44 @@
+{
+  "matcher": "^(?:.*)\\bproj\\b",
+  "test_ok": [
+    "I need proj installed.",
+    "proj seems like a good dependency.",
+    "Error: proj not found.",
+    "proj"
+  ],
+  "test_fail": [
+    "projs",
+    "libproj",
+    "projlib"
+  ],
+  "packages": [
+    {
+      "name": "libproj-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libproj-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "proj",
+      "manager": "zypper"
+    },
+    {
+      "name": "proj-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "proj-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "proj-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "proj-epsg",
+      "manager": "dnf"
+    }
+  ]
+}

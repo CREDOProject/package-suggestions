@@ -1,0 +1,33 @@
+{
+  "matcher": "^(?:.*)\\bPopplerC\\b(?:.*)$",
+  "test_ok": [
+    "I need PopplerC installed.",
+    "PopplerC seems like a good dependency.",
+    "Error: PopplerC not found.",
+    "PopplerC"
+  ],
+  "test_fail": [
+    "popplerc",
+    "PopplerCs",
+    "libPopplerC",
+    "PopplerClib"
+  ],
+  "packages": [
+    {
+      "name": "libpoppler-cpp-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libpoppler-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "poppler-cpp-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "poppler-dev",
+      "manager": "apk"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bxz\\b",
+  "test_ok": [
+    "I need xz installed.",
+    "xz seems like a good dependency.",
+    "Error: xz not found.",
+    "xz"
+  ],
+  "test_fail": [
+    "xzs",
+    "libxz",
+    "xzlib"
+  ],
+  "packages": [
+    {
+      "name": "xz",
+      "manager": "apk"
+    },
+    {
+      "name": "xz",
+      "manager": "dnf"
+    },
+    {
+      "name": "xz",
+      "manager": "zypper"
+    },
+    {
+      "name": "xz-utils",
+      "manager": "apt"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "matcher": "^(?:.*)\\blibmysqlclient\\b",
+  "test_ok": [
+    "I need libmysqlclient installed.",
+    "libmysqlclient seems like a good dependency.",
+    "Error: libmysqlclient not found.",
+    "libmysqlclient"
+  ],
+  "test_fail": [
+    "libmysqlclients",
+    "liblibmysqlclient",
+    "libmysqlclientlib"
+  ],
+  "packages": [
+    {
+      "name": "libmariadb-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libmariadb-dev-compat",
+      "manager": "apt"
+    },
+    {
+      "name": "libmariadb-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libmysqlclient-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libmysqlclient-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "mariadb-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "mariadb-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "mysql-devel",
+      "manager": "dnf"
+    }
+  ]
+}

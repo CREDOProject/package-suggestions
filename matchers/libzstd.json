@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\blibzstd\\b",
+  "test_ok": [
+    "I need libzstd installed.",
+    "libzstd seems like a good dependency.",
+    "Error: libzstd not found.",
+    "libzstd"
+  ],
+  "test_fail": [
+    "libzstds",
+    "liblibzstd",
+    "libzstdlib"
+  ],
+  "packages": [
+    {
+      "name": "libzstd-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libzstd-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libzstd-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "zstd-dev",
+      "manager": "apk"
+    }
+  ]
+}

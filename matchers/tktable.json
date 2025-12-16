@@ -1,0 +1,24 @@
+{
+  "matcher": "^(?:.*)\\btktable\\b",
+  "test_ok": [
+    "I need tktable installed.",
+    "tktable seems like a good dependency.",
+    "Error: tktable not found.",
+    "tktable"
+  ],
+  "test_fail": [
+    "tktables",
+    "libtktable",
+    "tktablelib"
+  ],
+  "packages": [
+    {
+      "name": "tk-table",
+      "manager": "apt"
+    },
+    {
+      "name": "tktable",
+      "manager": "zypper"
+    }
+  ]
+}

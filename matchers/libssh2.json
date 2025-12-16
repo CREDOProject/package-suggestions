@@ -1,0 +1,40 @@
+{
+  "matcher": "^(?:.*)\\blibssh2\\b",
+  "test_ok": [
+    "I need libssh2 installed.",
+    "libssh2 seems like a good dependency.",
+    "Error: libssh2 not found.",
+    "libssh2"
+  ],
+  "test_fail": [
+    "libssh2s",
+    "liblibssh2",
+    "libssh2lib"
+  ],
+  "packages": [
+    {
+      "name": "libopenssl-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libssh2",
+      "manager": "dnf"
+    },
+    {
+      "name": "libssh2-1-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libssh2-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libssh2-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libssh2-devel",
+      "manager": "zypper"
+    }
+  ]
+}

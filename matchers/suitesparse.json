@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bsuitesparse\\b",
+  "test_ok": [
+    "I need suitesparse installed.",
+    "suitesparse seems like a good dependency.",
+    "Error: suitesparse not found.",
+    "suitesparse"
+  ],
+  "test_fail": [
+    "suitesparses",
+    "libsuitesparse",
+    "suitesparselib"
+  ],
+  "packages": [
+    {
+      "name": "libsuitesparse-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "suitesparse-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "suitesparse-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "suitesparse-devel",
+      "manager": "zypper"
+    }
+  ]
+}

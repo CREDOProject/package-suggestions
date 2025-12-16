@@ -1,0 +1,24 @@
+{
+  "matcher": "^(?:.*)\\bpandoc-citeproc\\b",
+  "test_ok": [
+    "I need pandoc-citeproc installed.",
+    "pandoc-citeproc seems like a good dependency.",
+    "Error: pandoc-citeproc not found.",
+    "pandoc-citeproc"
+  ],
+  "test_fail": [
+    "pandoc-citeprocs",
+    "libpandoc-citeproc",
+    "pandoc-citeproclib"
+  ],
+  "packages": [
+    {
+      "name": "pandoc-citeproc",
+      "manager": "apt"
+    },
+    {
+      "name": "pandoc-citeproc",
+      "manager": "dnf"
+    }
+  ]
+}

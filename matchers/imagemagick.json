@@ -1,0 +1,48 @@
+{
+  "matcher": "^(?:.*)\\bimagemagick\\b",
+  "test_ok": [
+    "I need imagemagick installed.",
+    "imagemagick seems like a good dependency.",
+    "Error: imagemagick not found.",
+    "imagemagick"
+  ],
+  "test_fail": [
+    "imagemagicks",
+    "libimagemagick",
+    "imagemagicklib"
+  ],
+  "packages": [
+    {
+      "name": "ImageMagick-c++-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "ImageMagick-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "ImageMagick-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "gsfonts",
+      "manager": "apt"
+    },
+    {
+      "name": "imagemagick-c++",
+      "manager": "apk"
+    },
+    {
+      "name": "imagemagick-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libMagick++-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libmagick++-dev",
+      "manager": "apt"
+    }
+  ]
+}

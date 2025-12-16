@@ -1,0 +1,44 @@
+{
+  "matcher": "^(?:.*)\\bicu4c\\b",
+  "test_ok": [
+    "I need icu4c installed.",
+    "icu4c seems like a good dependency.",
+    "Error: icu4c not found.",
+    "icu4c"
+  ],
+  "test_fail": [
+    "icu4cs",
+    "libicu4c",
+    "icu4clib"
+  ],
+  "packages": [
+    {
+      "name": "icu-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "icu.691-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libicu",
+      "manager": "dnf"
+    },
+    {
+      "name": "libicu-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libicu-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libicu-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libicu73_2-devel",
+      "manager": "zypper"
+    }
+  ]
+}

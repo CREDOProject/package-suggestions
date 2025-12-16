@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bpatch\\b",
+  "test_ok": [
+    "I need patch installed.",
+    "patch seems like a good dependency.",
+    "Error: patch not found.",
+    "patch"
+  ],
+  "test_fail": [
+    "patchs",
+    "libpatch",
+    "patchlib"
+  ],
+  "packages": [
+    {
+      "name": "patch",
+      "manager": "apk"
+    },
+    {
+      "name": "patch",
+      "manager": "apt"
+    },
+    {
+      "name": "patch",
+      "manager": "dnf"
+    },
+    {
+      "name": "patch",
+      "manager": "zypper"
+    }
+  ]
+}

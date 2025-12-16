@@ -1,0 +1,40 @@
+{
+  "matcher": "^(?:.*)\\blibarchive\\b",
+  "test_ok": [
+    "I need libarchive installed.",
+    "libarchive seems like a good dependency.",
+    "Error: libarchive not found.",
+    "libarchive"
+  ],
+  "test_fail": [
+    "libarchives",
+    "liblibarchive",
+    "libarchivelib"
+  ],
+  "packages": [
+    {
+      "name": "libarchive",
+      "manager": "dnf"
+    },
+    {
+      "name": "libarchive-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libarchive-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libarchive-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libarchive-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libarchive3-devel",
+      "manager": "dnf"
+    }
+  ]
+}

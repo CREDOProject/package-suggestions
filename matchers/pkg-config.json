@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\bpkg-config\\b",
+  "test_ok": [
+    "I need pkg-config installed.",
+    "pkg-config seems like a good dependency.",
+    "Error: pkg-config not found.",
+    "pkg-config"
+  ],
+  "test_fail": [
+    "pkg-configs",
+    "libpkg-config",
+    "pkg-configlib"
+  ],
+  "packages": [
+    {
+      "name": "pkg-config",
+      "manager": "apt"
+    },
+    {
+      "name": "pkg-config",
+      "manager": "zypper"
+    },
+    {
+      "name": "pkgconf",
+      "manager": "apk"
+    },
+    {
+      "name": "pkgconf-pkg-config",
+      "manager": "dnf"
+    },
+    {
+      "name": "pkgconfig",
+      "manager": "dnf"
+    }
+  ]
+}

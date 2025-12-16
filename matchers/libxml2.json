@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\blibxml2\\b",
+  "test_ok": [
+    "I need libxml2 installed.",
+    "libxml2 seems like a good dependency.",
+    "Error: libxml2 not found.",
+    "libxml2"
+  ],
+  "test_fail": [
+    "libxml2s",
+    "liblibxml2",
+    "libxml2lib"
+  ],
+  "packages": [
+    {
+      "name": "libxml2-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libxml2-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libxml2-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libxml2-devel",
+      "manager": "zypper"
+    }
+  ]
+}

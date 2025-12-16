@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\bsdl2\\b",
+  "test_ok": [
+    "I need sdl2 installed.",
+    "sdl2 seems like a good dependency.",
+    "Error: sdl2 not found.",
+    "sdl2"
+  ],
+  "test_fail": [
+    "sdl2s",
+    "libsdl2",
+    "sdl2lib"
+  ],
+  "packages": [
+    {
+      "name": "SDL2-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "SDL2-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libSDL2-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libsdl2-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "sdl2-dev",
+      "manager": "apk"
+    }
+  ]
+}

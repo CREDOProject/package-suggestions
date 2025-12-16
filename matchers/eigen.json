@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\beigen3?\\b",
+  "test_ok": [
+    "I need eigen3 installed.",
+    "eigen3 seems like a good dependency.",
+    "Error: eigen3 not found.",
+    "eigen3"
+  ],
+  "test_fail": [
+    "eigen3s",
+    "libeigen3",
+    "eigen3lib"
+  ],
+  "packages": [
+    {
+      "name": "eigen-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "eigen3-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "eigen3-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libeigen3-dev",
+      "manager": "apt"
+    }
+  ]
+}

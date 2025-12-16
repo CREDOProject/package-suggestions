@@ -1,0 +1,28 @@
+{
+  "matcher": "^(?:.*)\\bchrome\\b",
+  "test_ok": [
+    "I need chrome installed.",
+    "chrome seems like a good dependency.",
+    "Error: chrome not found.",
+    "chrome"
+  ],
+  "test_fail": [
+    "chromes",
+    "libchrome",
+    "chromelib"
+  ],
+  "packages": [
+    {
+      "name": "chromium",
+      "manager": "apk"
+    },
+    {
+      "name": "chromium",
+      "manager": "apt"
+    },
+    {
+      "name": "chromium",
+      "manager": "dnf"
+    }
+  ]
+}

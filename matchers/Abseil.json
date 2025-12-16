@@ -1,0 +1,25 @@
+{
+  "matcher": "^(?:.*)\\bAbseil\\b",
+  "test_ok": [
+    "I need Abseil installed.",
+    "Abseil seems like a good dependency.",
+    "Error: Abseil not found.",
+    "Abseil"
+  ],
+  "test_fail": [
+    "abseil",
+    "Abseils",
+    "libAbseil",
+    "Abseillib"
+  ],
+  "packages": [
+    {
+      "name": "abseil-cpp-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libabsl-dev",
+      "manager": "apt"
+    }
+  ]
+}

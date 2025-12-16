@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\blibjq\\b",
+  "test_ok": [
+    "I need libjq installed.",
+    "libjq seems like a good dependency.",
+    "Error: libjq not found.",
+    "libjq"
+  ],
+  "test_fail": [
+    "libjqs",
+    "liblibjq",
+    "libjqlib"
+  ],
+  "packages": [
+    {
+      "name": "jq-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "jq-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libjq-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libjq-devel",
+      "manager": "zypper"
+    }
+  ]
+}

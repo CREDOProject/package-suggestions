@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bfontconfig\\b",
+  "test_ok": [
+    "I need fontconfig installed.",
+    "fontconfig seems like a good dependency.",
+    "Error: fontconfig not found.",
+    "fontconfig"
+  ],
+  "test_fail": [
+    "fontconfigs",
+    "libfontconfig",
+    "fontconfiglib"
+  ],
+  "packages": [
+    {
+      "name": "fontconfig-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "fontconfig-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "fontconfig-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libfontconfig1-dev",
+      "manager": "apt"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "matcher": "^(?:.*)\\bjava\\b",
+  "test_ok": [
+    "I need java installed.",
+    "java seems like a good dependency.",
+    "Error: java not found.",
+    "java"
+  ],
+  "test_fail": [
+    "javas",
+    "libjava",
+    "javalib"
+  ],
+  "packages": [
+    {
+      "name": "default-jdk",
+      "manager": "apt"
+    },
+    {
+      "name": "java-1.8.0-openjdk-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "java-11-openjdk-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "java-11-openjdk-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "java-1_8_0-openjdk-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "java-21-openjdk-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "java-jdk",
+      "manager": "apk"
+    }
+  ]
+}

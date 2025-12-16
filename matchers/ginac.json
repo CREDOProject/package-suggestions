@@ -1,0 +1,28 @@
+{
+  "matcher": "^(?:.*)\\bginac\\b",
+  "test_ok": [
+    "I need ginac installed.",
+    "ginac seems like a good dependency.",
+    "Error: ginac not found.",
+    "ginac"
+  ],
+  "test_fail": [
+    "ginacs",
+    "libginac",
+    "ginaclib"
+  ],
+  "packages": [
+    {
+      "name": "ginac-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "ginac-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libginac-dev",
+      "manager": "apt"
+    }
+  ]
+}

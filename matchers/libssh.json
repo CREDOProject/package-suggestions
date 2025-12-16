@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\blibssh\\b",
+  "test_ok": [
+    "I need libssh installed.",
+    "libssh seems like a good dependency.",
+    "Error: libssh not found.",
+    "libssh"
+  ],
+  "test_fail": [
+    "libsshs",
+    "liblibssh",
+    "libsshlib"
+  ],
+  "packages": [
+    {
+      "name": "libssh",
+      "manager": "dnf"
+    },
+    {
+      "name": "libssh-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libssh-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libssh-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libssh-devel",
+      "manager": "zypper"
+    }
+  ]
+}

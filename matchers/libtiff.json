@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\blibtiff\\b",
+  "test_ok": [
+    "I need libtiff installed.",
+    "libtiff seems like a good dependency.",
+    "Error: libtiff not found.",
+    "libtiff"
+  ],
+  "test_fail": [
+    "libtiffs",
+    "liblibtiff",
+    "libtifflib"
+  ],
+  "packages": [
+    {
+      "name": "libtiff-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libtiff-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libtiff-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "tiff-dev",
+      "manager": "apk"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "matcher": "^(?:.*)\\bparigp\\b",
+  "test_ok": [
+    "I need parigp installed.",
+    "parigp seems like a good dependency.",
+    "Error: parigp not found.",
+    "parigp"
+  ],
+  "test_fail": [
+    "parigps",
+    "libparigp",
+    "parigplib"
+  ],
+  "packages": [
+    {
+      "name": "pari-gp",
+      "manager": "apt"
+    },
+    {
+      "name": "pari-gp",
+      "manager": "dnf"
+    },
+    {
+      "name": "pari-gp",
+      "manager": "zypper"
+    }
+  ]
+}

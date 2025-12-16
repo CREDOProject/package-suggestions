@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\blibsodium\\b",
+  "test_ok": [
+    "I need libsodium installed.",
+    "libsodium seems like a good dependency.",
+    "Error: libsodium not found.",
+    "libsodium"
+  ],
+  "test_fail": [
+    "libsodiums",
+    "liblibsodium",
+    "libsodiumlib"
+  ],
+  "packages": [
+    {
+      "name": "libsodium-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "libsodium-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libsodium-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "libsodium-devel",
+      "manager": "zypper"
+    }
+  ]
+}

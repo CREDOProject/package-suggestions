@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bperl\\b",
+  "test_ok": [
+    "I need perl installed.",
+    "perl seems like a good dependency.",
+    "Error: perl not found.",
+    "perl"
+  ],
+  "test_fail": [
+    "perls",
+    "libperl",
+    "perllib"
+  ],
+  "packages": [
+    {
+      "name": "perl",
+      "manager": "apk"
+    },
+    {
+      "name": "perl",
+      "manager": "apt"
+    },
+    {
+      "name": "perl",
+      "manager": "dnf"
+    },
+    {
+      "name": "perl",
+      "manager": "zypper"
+    }
+  ]
+}

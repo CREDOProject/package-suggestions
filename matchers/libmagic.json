@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\blibmagic\\b",
+  "test_ok": [
+    "I need libmagic installed.",
+    "libmagic seems like a good dependency.",
+    "Error: libmagic not found.",
+    "libmagic"
+  ],
+  "test_fail": [
+    "libmagics",
+    "liblibmagic",
+    "libmagiclib"
+  ],
+  "packages": [
+    {
+      "name": "file-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "file-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "file-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "file-libs",
+      "manager": "dnf"
+    },
+    {
+      "name": "libmagic-dev",
+      "manager": "apt"
+    }
+  ]
+}

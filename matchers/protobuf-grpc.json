@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\bgrpcprotobuf\\b",
+  "test_ok": [
+    "I need grpcprotobuf installed.",
+    "grpcprotobuf seems like a good dependency.",
+    "Error: grpcprotobuf not found.",
+    "grpcprotobuf"
+  ],
+  "test_fail": [
+    "grpcprotobufs",
+    "libgrpcprotobuf",
+    "grpcprotobuflib"
+  ],
+  "packages": [
+    {
+      "name": "grpc-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "grpc-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "grpc-plugins",
+      "manager": "apk"
+    },
+    {
+      "name": "grpc-plugins",
+      "manager": "dnf"
+    },
+    {
+      "name": "protobuf-compiler-grpc",
+      "manager": "apt"
+    }
+  ]
+}

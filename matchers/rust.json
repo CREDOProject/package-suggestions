@@ -1,0 +1,15 @@
+{
+  "matcher": "^(?:.*)\\brust\\b",
+  "test_ok": [
+    "I need rust installed.",
+    "rust seems like a good dependency.",
+    "Error: rust not found.",
+    "rust"
+  ],
+  "test_fail": [
+    "rusts",
+    "librust",
+    "rustlib"
+  ],
+  "packages": []
+}

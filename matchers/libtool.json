@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\blibtool\\b",
+  "test_ok": [
+    "I need libtool installed.",
+    "libtool seems like a good dependency.",
+    "Error: libtool not found.",
+    "libtool"
+  ],
+  "test_fail": [
+    "libtools",
+    "liblibtool",
+    "libtoollib"
+  ],
+  "packages": [
+    {
+      "name": "libtool",
+      "manager": "apk"
+    },
+    {
+      "name": "libtool",
+      "manager": "apt"
+    },
+    {
+      "name": "libtool",
+      "manager": "dnf"
+    },
+    {
+      "name": "libtool",
+      "manager": "zypper"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bsymphony\\b",
+  "test_ok": [
+    "I need symphony installed.",
+    "symphony seems like a good dependency.",
+    "Error: symphony not found.",
+    "symphony"
+  ],
+  "test_fail": [
+    "symphonys",
+    "libsymphony",
+    "symphonylib"
+  ],
+  "packages": [
+    {
+      "name": "coin-or-SYMPHONY",
+      "manager": "dnf"
+    },
+    {
+      "name": "coin-or-SYMPHONY-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "coinor-libsymphony-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "coinor-symphony",
+      "manager": "apt"
+    }
+  ]
+}

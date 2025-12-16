@@ -1,0 +1,40 @@
+{
+  "matcher": "^(?:.*)\\bpython\\b",
+  "test_ok": [
+    "I need python installed.",
+    "python seems like a good dependency.",
+    "Error: python not found.",
+    "python"
+  ],
+  "test_fail": [
+    "pythons",
+    "libpython",
+    "pythonlib"
+  ],
+  "packages": [
+    {
+      "name": "python",
+      "manager": "dnf"
+    },
+    {
+      "name": "python",
+      "manager": "zypper"
+    },
+    {
+      "name": "python2",
+      "manager": "dnf"
+    },
+    {
+      "name": "python3",
+      "manager": "apk"
+    },
+    {
+      "name": "python3",
+      "manager": "apt"
+    },
+    {
+      "name": "python3",
+      "manager": "dnf"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "matcher": "^(?:.*)\\bswftools\\b",
+  "test_ok": [
+    "I need swftools installed.",
+    "swftools seems like a good dependency.",
+    "Error: swftools not found.",
+    "swftools"
+  ],
+  "test_fail": [
+    "swftoolss",
+    "libswftools",
+    "swftoolslib"
+  ],
+  "packages": [
+    {
+      "name": "swftools",
+      "manager": "apt"
+    },
+    {
+      "name": "swftools",
+      "manager": "zypper"
+    }
+  ]
+}

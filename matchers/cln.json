@@ -1,0 +1,28 @@
+{
+  "matcher": "^(?:.*)\\bcln\\b",
+  "test_ok": [
+    "I need cln installed.",
+    "cln seems like a good dependency.",
+    "Error: cln not found.",
+    "cln"
+  ],
+  "test_fail": [
+    "clns",
+    "libcln",
+    "clnlib"
+  ],
+  "packages": [
+    {
+      "name": "cln-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "cln-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libcln-dev",
+      "manager": "apt"
+    }
+  ]
+}

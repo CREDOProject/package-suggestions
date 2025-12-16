@@ -1,0 +1,24 @@
+{
+  "matcher": "^(?:.*)\\blibmecab\\b",
+  "test_ok": [
+    "I need libmecab installed.",
+    "libmecab seems like a good dependency.",
+    "Error: libmecab not found.",
+    "libmecab"
+  ],
+  "test_fail": [
+    "libmecabs",
+    "liblibmecab",
+    "libmecablib"
+  ],
+  "packages": [
+    {
+      "name": "libmecab-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "mecab-devel",
+      "manager": "dnf"
+    }
+  ]
+}

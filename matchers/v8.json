@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\bv8\\b",
+  "test_ok": [
+    "I need v8 installed.",
+    "v8 seems like a good dependency.",
+    "Error: v8 not found.",
+    "v8"
+  ],
+  "test_fail": [
+    "v8s",
+    "libv8",
+    "v8lib"
+  ],
+  "packages": [
+    {
+      "name": "libnode-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libv8-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "nodejs-libs",
+      "manager": "dnf"
+    },
+    {
+      "name": "v8-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "v8-devel",
+      "manager": "zypper"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "matcher": "^(?:.*)\\bBoost\\b",
+  "test_ok": [
+    "I need Boost installed.",
+    "Boost seems like a good dependency.",
+    "Error: Boost not found.",
+    "Boost"
+  ],
+  "test_fail": [
+    "boost",
+    "Boosts",
+    "libBoost",
+    "Boostlib"
+  ],
+  "packages": [
+    {
+      "name": "boost-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "boost-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "boost-gnu-hpc-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libboost-all-dev",
+      "manager": "apt"
+    }
+  ]
+}

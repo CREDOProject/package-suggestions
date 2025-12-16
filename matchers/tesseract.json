@@ -1,0 +1,36 @@
+{
+  "matcher": "^(?:.*)\\btesseract\\b",
+  "test_ok": [
+    "I need tesseract installed.",
+    "tesseract seems like a good dependency.",
+    "Error: tesseract not found.",
+    "tesseract"
+  ],
+  "test_fail": [
+    "tesseracts",
+    "libtesseract",
+    "tesseractlib"
+  ],
+  "packages": [
+    {
+      "name": "libtesseract-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "tesseract-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "tesseract-ocr-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "tesseract-ocr-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "tesseract-ocr-eng",
+      "manager": "apt"
+    }
+  ]
+}

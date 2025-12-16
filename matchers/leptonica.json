@@ -1,0 +1,32 @@
+{
+  "matcher": "^(?:.*)\\bleptonica\\b",
+  "test_ok": [
+    "I need leptonica installed.",
+    "leptonica seems like a good dependency.",
+    "Error: leptonica not found.",
+    "leptonica"
+  ],
+  "test_fail": [
+    "leptonicas",
+    "libleptonica",
+    "leptonicalib"
+  ],
+  "packages": [
+    {
+      "name": "leptonica-dev",
+      "manager": "apk"
+    },
+    {
+      "name": "leptonica-devel",
+      "manager": "dnf"
+    },
+    {
+      "name": "leptonica-devel",
+      "manager": "zypper"
+    },
+    {
+      "name": "libleptonica-dev",
+      "manager": "apt"
+    }
+  ]
+}

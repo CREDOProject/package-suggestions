@@ -1,0 +1,24 @@
+{
+  "matcher": "^(?:.*)\\bosmium-tool\\b",
+  "test_ok": [
+    "I need osmium-tool installed.",
+    "osmium-tool seems like a good dependency.",
+    "Error: osmium-tool not found.",
+    "osmium-tool"
+  ],
+  "test_fail": [
+    "osmium-tools",
+    "libosmium-tool",
+    "osmium-toollib"
+  ],
+  "packages": [
+    {
+      "name": "osmium-tool",
+      "manager": "apt"
+    },
+    {
+      "name": "osmium-tool",
+      "manager": "dnf"
+    }
+  ]
+}
