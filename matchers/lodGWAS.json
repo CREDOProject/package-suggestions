@@ -1,0 +1,16 @@
+{
+  "matcher": "ERROR: dependency ‘rms’ is not available for package ‘lodGWAS’",
+  "test_ok": [
+    "ERROR: dependency ‘rms’ is not available for package ‘lodGWAS’"
+  ],
+  "test_fail": [
+    "ERROR: other unrelated error message",
+    "dependency ‘some_other_package’ is not available for package ‘lodGWAS’"
+  ],
+  "packages": [
+    {
+      "name": "rms",
+      "manager": "cran"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "matcher": "ERROR: dependency ‘.*’ is not available for package ‘network’",
+  "test_ok": [
+    "ERROR: dependency ‘tibble’ is not available for package ‘network’"
+  ],
+  "test_fail": [
+    "Dependency for some random package",
+    "Network error occurred"
+  ],
+  "packages": [
+    {
+      "name": "tibble",
+      "manager": "cran"
+    },
+    {
+      "name": "network",
+      "manager": "cran"
+    },
+    {
+      "name": "sna",
+      "manager": "cran"
+    },
+    {
+      "name": "bipartite",
+      "manager": "cran"
+    },
+    {
+      "name": "cassandRa",
+      "manager": "cran"
+    }
+  ]
+}

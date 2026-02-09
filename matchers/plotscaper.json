@@ -1,0 +1,39 @@
+{
+  "matcher": "dependencies.*not available for package",
+  "test_ok": [
+    "ERROR: dependencies ‘fastmap’, ‘rlang’ are not available for package ‘htmltools’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘unrelated_package’ is missing"
+  ],
+  "packages": [
+    {
+      "name": "fastmap",
+      "manager": "cran"
+    },
+    {
+      "name": "rlang",
+      "manager": "cran"
+    },
+    {
+      "name": "htmltools",
+      "manager": "cran"
+    },
+    {
+      "name": "bslib",
+      "manager": "cran"
+    },
+    {
+      "name": "fontawesome",
+      "manager": "cran"
+    },
+    {
+      "name": "jquerylib",
+      "manager": "cran"
+    },
+    {
+      "name": "htmlwidgets",
+      "manager": "cran"
+    }
+  ]
+}

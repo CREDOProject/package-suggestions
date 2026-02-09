@@ -1,0 +1,21 @@
+{
+  "matcher": "gdal-config not found or not executable|ERROR: dependency ‘sf’ is not available for package",
+  "test_ok": [
+    "configure: error: gdal-config not found or not executable.",
+    "ERROR: dependency ‘sf’ is not available for package ‘mapsf’"
+  ],
+  "test_fail": [
+    "no configuration error",
+    "successful build"
+  ],
+  "packages": [
+    {
+      "name": "gdal-bin",
+      "manager": "apt"
+    },
+    {
+      "name": "sf",
+      "manager": "cran"
+    }
+  ]
+}

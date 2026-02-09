@@ -1,0 +1,37 @@
+{
+  "matcher": "(?i)ERROR: dependency ‘XVector’ is not available for package ‘Biostrings’|ERROR: dependency ‘KEGGREST’ is not available for package ‘AnnotationDbi’|ERROR: dependency ‘AnnotationDbi’ is not available for package ‘GO.db’|ERROR: dependency ‘GO.db’ is not available for package ‘randomGODB’|ERROR: dependency ‘randomGODB’ is not available for package ‘GoMiner’|ERROR: dependency ‘GoMiner’ is not available for package ‘HTGM’",
+  "test_ok": [
+    "ERROR: dependency ‘XVector’ is not available for package ‘Biostrings’",
+    "ERROR: dependency ‘KEGGREST’ is not available for package ‘AnnotationDbi’"
+  ],
+  "test_fail": [
+    "ERROR: package ‘Rcpp’ is required but not installed",
+    "Failed to install package due to network error"
+  ],
+  "packages": [
+    {
+      "name": "XVector",
+      "manager": "bioconductor"
+    },
+    {
+      "name": "KEGGREST",
+      "manager": "bioconductor"
+    },
+    {
+      "name": "AnnotationDbi",
+      "manager": "bioconductor"
+    },
+    {
+      "name": "GO.db",
+      "manager": "bioconductor"
+    },
+    {
+      "name": "randomGODB",
+      "manager": "bioconductor"
+    },
+    {
+      "name": "GoMiner",
+      "manager": "bioconductor"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "matcher": "ERROR: dependenc(ies|y) .* (are|is) not available for package",
+  "test_ok": [
+    "ERROR: dependency ‘numDeriv’ is not available for package ‘pbkrtest’",
+    "ERROR: dependency ‘Formula’, ‘pbkrtest’ are not available for package ‘car’"
+  ],
+  "test_fail": [
+    "Installing package from source",
+    "Package successfully installed"
+  ],
+  "packages": [
+    {
+      "name": "numDeriv",
+      "manager": "cran"
+    },
+    {
+      "name": "Formula",
+      "manager": "cran"
+    },
+    {
+      "name": "pbkrtest",
+      "manager": "cran"
+    },
+    {
+      "name": "car",
+      "manager": "cran"
+    },
+    {
+      "name": "rstatix",
+      "manager": "cran"
+    },
+    {
+      "name": "ggpubr",
+      "manager": "cran"
+    }
+  ]
+}

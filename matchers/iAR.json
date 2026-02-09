@@ -1,0 +1,17 @@
+{
+  "matcher": "downloaded (\\d+ KB)\\n\\d{4}/\\d{2}/\\d{2} \\d{2}:\\d{2}:\\d{2} save\\.go:22: Error saving: exit status 1",
+  "test_ok": [
+    "downloaded 39 KB\n2025/12/24 12:16:44 save.go:22: Error saving: exit status 1"
+  ],
+  "test_fail": [
+    "successfully downloaded 100 KB",
+    "save.go:22: Error loading: exit status 1",
+    "No errors found"
+  ],
+  "packages": [
+    {
+      "name": "withr",
+      "manager": "cran"
+    }
+  ]
+}

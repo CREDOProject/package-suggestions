@@ -1,0 +1,31 @@
+{
+  "matcher": "ERROR: dependencies ‘raster’, ‘terra’ are not available for package",
+  "test_ok": [
+    "ERROR: dependencies ‘raster’, ‘terra’ are not available for package ‘dismo’"
+  ],
+  "test_fail": [
+    "ERROR: configuration failed for package ‘terra’"
+  ],
+  "packages": [
+    {
+      "name": "terra",
+      "manager": "cran"
+    },
+    {
+      "name": "raster",
+      "manager": "cran"
+    },
+    {
+      "name": "gdistance",
+      "manager": "cran"
+    },
+    {
+      "name": "dismo",
+      "manager": "cran"
+    },
+    {
+      "name": "PopGenReport",
+      "manager": "cran"
+    }
+  ]
+}

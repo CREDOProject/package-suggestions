@@ -1,0 +1,21 @@
+{
+  "matcher": "ERROR: dependency [‘'](dplyr|tidyr)[’'] is not available for package [‘'](tidyr|CMTFtoolbox)[’']",
+  "test_ok": [
+    "ERROR: dependency ‘dplyr’ is not available for package ‘tidyr’",
+    "ERROR: dependency ‘tidyr’ is not available for package ‘CMTFtoolbox’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘ggplot2’ is not available for package ‘dplyr’",
+    "ERROR: installation of package ‘dplyr’ had non-zero exit status"
+  ],
+  "packages": [
+    {
+      "name": "dplyr",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyr",
+      "manager": "cran"
+    }
+  ]
+}

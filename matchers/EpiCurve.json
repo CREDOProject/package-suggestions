@@ -1,0 +1,38 @@
+{
+  "matcher": "dependenc(ies|y) .*(?:lifecycle|vctrs|pillar|gtable|scales|stringr).* (are|is) not available for package",
+  "test_ok": [
+    "ERROR: dependency ‘lifecycle’ is not available for package ‘vctrs’",
+    "ERROR: dependencies ‘lifecycle’, ‘vctrs’ are not available for package ‘pillar’",
+    "ERROR: dependencies ‘gtable’, ‘lifecycle’, ‘scales’, ‘vctrs’ are not available for package ‘ggplot2’"
+  ],
+  "test_fail": [
+    "installation of package had non-zero exit status",
+    "package ‘magrittr’ successfully unpacked"
+  ],
+  "packages": [
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "gtable",
+      "manager": "cran"
+    },
+    {
+      "name": "scales",
+      "manager": "cran"
+    },
+    {
+      "name": "stringr",
+      "manager": "cran"
+    }
+  ]
+}

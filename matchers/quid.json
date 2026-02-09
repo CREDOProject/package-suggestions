@@ -1,0 +1,26 @@
+{
+  "matcher": "ERROR: dependency ‘farver’ is not available for package ‘scales’|ERROR: dependency ‘scales’ is not available for package ‘ggplot2’|ERROR: dependency ‘ggplot2’ is not available for package ‘quid’",
+  "test_ok": [
+    "ERROR: dependency ‘farver’ is not available for package ‘scales’",
+    "ERROR: dependency ‘scales’ is not available for package ‘ggplot2’",
+    "ERROR: dependency ‘ggplot2’ is not available for package ‘quid’"
+  ],
+  "test_fail": [
+    "ERROR: package ‘xyz’ is not available",
+    "dependency ‘some_package’ is not available"
+  ],
+  "packages": [
+    {
+      "name": "farver",
+      "manager": "cran"
+    },
+    {
+      "name": "scales",
+      "manager": "cran"
+    },
+    {
+      "name": "ggplot2",
+      "manager": "cran"
+    }
+  ]
+}

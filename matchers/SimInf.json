@@ -1,0 +1,19 @@
+{
+  "matcher": "configuration failed for package ‘SimInf’",
+  "test_ok": [
+    "ERROR: configuration failed for package ‘SimInf’"
+  ],
+  "test_fail": [
+    "ERROR: some other configuration failed"
+  ],
+  "packages": [
+    {
+      "name": "libgsl-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "gsl",
+      "manager": "cran"
+    }
+  ]
+}

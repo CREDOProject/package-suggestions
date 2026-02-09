@@ -1,0 +1,21 @@
+{
+  "matcher": "ERROR: dependency ‘blob’ is not available for package ‘dbplyr’|ERROR: dependency ‘dbplyr’ is not available for package ‘RClickhouse’",
+  "test_ok": [
+    "ERROR: dependency ‘blob’ is not available for package ‘dbplyr’",
+    "ERROR: dependency ‘dbplyr’ is not available for package ‘RClickhouse’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘dbplyr’ is not available for package ‘tidyverse’",
+    "ERROR: Cannot find the dependency"
+  ],
+  "packages": [
+    {
+      "name": "blob",
+      "manager": "cran"
+    },
+    {
+      "name": "dbplyr",
+      "manager": "cran"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "matcher": "ERROR: dependency ‘(\\w+)’ is not available for package ‘(\\w+)’",
+  "test_ok": [
+    "ERROR: dependency ‘httr’ is not available for package ‘plotly’",
+    "ERROR: dependency ‘plotly’ is not available for package ‘mixtools’",
+    "ERROR: dependency ‘mixtools’ is not available for package ‘biodosetools’"
+  ],
+  "test_fail": [
+    "ERROR: some random error unrelated to packages",
+    "INFO: package installed successfully",
+    "ERROR: file not found"
+  ],
+  "packages": [
+    {
+      "name": "httr",
+      "manager": "cran"
+    },
+    {
+      "name": "plotly",
+      "manager": "cran"
+    },
+    {
+      "name": "mixtools",
+      "manager": "cran"
+    }
+  ]
+}

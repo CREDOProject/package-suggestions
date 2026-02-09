@@ -1,0 +1,25 @@
+{
+  "matcher": "ERROR: dependency .* is not available for package",
+  "test_ok": [
+    "ERROR: dependency ‘farver’ is not available for package ‘scales’",
+    "ERROR: dependency ‘scales’ is not available for package ‘ggplot2’"
+  ],
+  "test_fail": [
+    "SUCCESS: no errors found",
+    "Package installation completed successfully"
+  ],
+  "packages": [
+    {
+      "name": "farver",
+      "manager": "cran"
+    },
+    {
+      "name": "scales",
+      "manager": "cran"
+    },
+    {
+      "name": "ggplot2",
+      "manager": "cran"
+    }
+  ]
+}

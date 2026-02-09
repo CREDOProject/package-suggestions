@@ -1,0 +1,25 @@
+{
+  "matcher": "ERROR: dependency ‘([^’]+)’ is not available for package ‘([^’]+)’",
+  "test_ok": [
+    "ERROR: dependency ‘rmarkdown’ is not available for package ‘htmlwidgets’",
+    "ERROR: dependency ‘htmlwidgets’ is not available for package ‘r3js’"
+  ],
+  "test_fail": [
+    "ERROR: package ‘tinytex’ is not available",
+    "installation of package ‘/credo_env/credoenv/cran/foo_1.0.tar.gz’ had non-zero exit status"
+  ],
+  "packages": [
+    {
+      "name": "tinytex",
+      "manager": "cran"
+    },
+    {
+      "name": "rmarkdown",
+      "manager": "cran"
+    },
+    {
+      "name": "htmlwidgets",
+      "manager": "cran"
+    }
+  ]
+}

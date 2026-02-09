@@ -1,0 +1,16 @@
+{
+  "matcher": "ERROR: dependency ‘salso’ is not available for package ‘batchmix’",
+  "test_ok": [
+    "ERROR: dependency ‘salso’ is not available for package ‘batchmix’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘xyz’ is not available for package ‘batchmix’",
+    "ERROR: configuration failed for package ‘salso’"
+  ],
+  "packages": [
+    {
+      "name": "salso",
+      "manager": "cran"
+    }
+  ]
+}

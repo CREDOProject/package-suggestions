@@ -1,0 +1,17 @@
+{
+  "matcher": "E: Unable to locate package or\\s*\\d{4}/\\d{2}/\\d{2} \\d{2}:\\d{2}:\\d{2} apt\\.go:\\d+: exit status 100",
+  "test_ok": [
+    "E: Unable to locate package or\n2025/12/25 01:14:46 apt.go:147: exit status 100"
+  ],
+  "test_fail": [
+    "E: Unable to locate package some-other-package",
+    "Package successfully configured",
+    "exit status 99"
+  ],
+  "packages": [
+    {
+      "name": "apt-utils",
+      "manager": "apt"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "matcher": "\\[credo\\] testing library load in R|debconf: delaying package configuration, since apt-utils is not installed",
+  "test_ok": [
+    "[credo] testing library load in R",
+    "debconf: delaying package configuration, since apt-utils is not installed"
+  ],
+  "test_fail": [
+    "[credo] completed without errors",
+    "Everything is installed correctly"
+  ],
+  "packages": [
+    {
+      "name": "apt-utils",
+      "manager": "apt"
+    },
+    {
+      "name": "covTestR",
+      "manager": "bioconductor"
+    }
+  ]
+}

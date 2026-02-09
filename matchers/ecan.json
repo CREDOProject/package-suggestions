@@ -1,0 +1,15 @@
+{
+  "matcher": "ERROR: dependency ‘cpp11’ is not available for package ‘tidyr’",
+  "test_ok": [
+    "ERROR: dependency ‘cpp11’ is not available for package ‘tidyr’"
+  ],
+  "test_fail": [
+    "ERROR: something else is not available for package ‘another’"
+  ],
+  "packages": [
+    {
+      "name": "cpp11",
+      "manager": "cran"
+    }
+  ]
+}

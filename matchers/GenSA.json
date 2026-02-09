@@ -1,0 +1,17 @@
+{
+  "matcher": "error: ‘Rf_allocLang’ was not declared in this scope; did you mean ‘Rf_allocList’\\?",
+  "test_ok": [
+    "Engine.cpp:855:21: error: ‘Rf_allocLang’ was not declared in this scope; did you mean ‘Rf_allocList’?"
+  ],
+  "test_fail": [
+    "Engine.cpp:855:21: error: ‘Rf_allocLang’ was not declared in this scope",
+    "error: ‘Rf_allocLang’ was not declared in this scope",
+    "some other error message"
+  ],
+  "packages": [
+    {
+      "name": "r-base-dev",
+      "manager": "apt"
+    }
+  ]
+}

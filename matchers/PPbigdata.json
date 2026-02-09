@@ -1,0 +1,16 @@
+{
+  "matcher": "Error saving: exit status 1",
+  "test_ok": [
+    "2025/12/27 08:51:55 save.go:22: Error saving: Error saving: Error saving: Error saving: exit status 1"
+  ],
+  "test_fail": [
+    "Error processing: exit status 0",
+    "2025/12/27 08:51:55 save.go:22: Successfully saved"
+  ],
+  "packages": [
+    {
+      "name": "mitml",
+      "manager": "cran"
+    }
+  ]
+}

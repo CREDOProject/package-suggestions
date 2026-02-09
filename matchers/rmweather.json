@@ -1,0 +1,64 @@
+{
+  "matcher": "ERROR: dependencies ‘lifecycle’, ‘glue’, ‘rlang’ are not available for package ‘lifecycle’",
+  "test_ok": [
+    "ERROR: dependencies ‘lifecycle’, ‘glue’, ‘rlang’ are not available for package ‘lifecycle’"
+  ],
+  "test_fail": [
+    "ERROR: dependencies ‘foobar’, ‘baz’ are not available for package ‘foobar’",
+    "ERROR: package ‘lifecycle’ not found"
+  ],
+  "packages": [
+    {
+      "name": "glue",
+      "manager": "cran"
+    },
+    {
+      "name": "rlang",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "tibble",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyselect",
+      "manager": "cran"
+    },
+    {
+      "name": "dplyr",
+      "manager": "cran"
+    },
+    {
+      "name": "purrr",
+      "manager": "cran"
+    },
+    {
+      "name": "gtable",
+      "manager": "cran"
+    },
+    {
+      "name": "gridExtra",
+      "manager": "cran"
+    },
+    {
+      "name": "scales",
+      "manager": "cran"
+    },
+    {
+      "name": "ggplot2",
+      "manager": "cran"
+    },
+    {
+      "name": "viridis",
+      "manager": "cran"
+    }
+  ]
+}

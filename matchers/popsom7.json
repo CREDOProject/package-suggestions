@@ -1,0 +1,23 @@
+{
+  "matcher": "ERROR: dependency ‘vctrs’ is not available for package ‘ggplot2’",
+  "test_ok": [
+    "ERROR: dependency ‘vctrs’ is not available for package ‘ggplot2’"
+  ],
+  "test_fail": [
+    "ERROR: something else is not available for package ‘ggplot2’"
+  ],
+  "packages": [
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "ggplot2",
+      "manager": "cran"
+    },
+    {
+      "name": "apt-utils",
+      "manager": "apt"
+    }
+  ]
+}

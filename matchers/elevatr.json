@@ -1,0 +1,37 @@
+{
+  "matcher": "gdal-config not found or not executable",
+  "test_ok": [
+    "configure: error: gdal-config not found or not executable. ",
+    "configure: error: gdal-config not found or not executable."
+  ],
+  "test_fail": [
+    "configure: error: some other error",
+    "gdal-config is found and executable"
+  ],
+  "packages": [
+    {
+      "name": "gdal-bin",
+      "manager": "apt"
+    },
+    {
+      "name": "terra",
+      "manager": "cran"
+    },
+    {
+      "name": "sf",
+      "manager": "cran"
+    },
+    {
+      "name": "raster",
+      "manager": "cran"
+    },
+    {
+      "name": "slippymath",
+      "manager": "cran"
+    },
+    {
+      "name": "elevatr",
+      "manager": "cran"
+    }
+  ]
+}

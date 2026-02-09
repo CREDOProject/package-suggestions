@@ -1,0 +1,17 @@
+{
+  "matcher": "ERROR: dependency ‘httr’ is not available for package ‘oai’",
+  "test_ok": [
+    "ERROR: dependency ‘httr’ is not available for package ‘oai’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘xyz’ is not available for package ‘abc’",
+    "DONE (httr)",
+    "httr is already installed"
+  ],
+  "packages": [
+    {
+      "name": "httr",
+      "manager": "cran"
+    }
+  ]
+}

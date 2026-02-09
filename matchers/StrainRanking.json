@@ -1,0 +1,16 @@
+{
+  "matcher": "ERROR: cannot extract package from ‘/credo_env/credoenv/cran/BiocManager_\\d+\\.\\d+\\.\\d+\\.tar\\.gz’",
+  "test_ok": [
+    "ERROR: cannot extract package from ‘/credo_env/credoenv/cran/BiocManager_1.30.27.tar.gz’"
+  ],
+  "test_fail": [
+    "ERROR: cannot extract package from ‘/credo_env/credoenv/cran/SomeOtherPackage_1.30.27.tar.gz’",
+    "ERROR: some other unrelated log message"
+  ],
+  "packages": [
+    {
+      "name": "r-base",
+      "manager": "apt"
+    }
+  ]
+}

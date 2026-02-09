@@ -1,0 +1,39 @@
+{
+  "matcher": "ERROR: dependency ‘.*’ is not available for package ‘.*’",
+  "test_ok": [
+    "ERROR: dependency ‘htmltools’ is not available for package ‘fontawesome’",
+    "ERROR: dependency ‘fontawesome’ is not available for package ‘rmarkdown’",
+    "ERROR: dependency ‘shiny’ is not available for package ‘golem’"
+  ],
+  "test_fail": [
+    "ERROR: unable to fetch data",
+    "ERROR: invalid syntax in package",
+    "ERROR: could not find required files"
+  ],
+  "packages": [
+    {
+      "name": "htmltools",
+      "manager": "cran"
+    },
+    {
+      "name": "fontawesome",
+      "manager": "cran"
+    },
+    {
+      "name": "rmarkdown",
+      "manager": "cran"
+    },
+    {
+      "name": "shiny",
+      "manager": "cran"
+    },
+    {
+      "name": "shinydashboard",
+      "manager": "cran"
+    },
+    {
+      "name": "golem",
+      "manager": "cran"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "matcher": "ERROR: dependenc(ies|y) ‘.*’ (are|is) not available for package ‘.*’",
+  "test_ok": [
+    "ERROR: dependency ‘dplyr’ is not available for package ‘tidyr’",
+    "ERROR: dependencies ‘dplyr’, ‘tidyr’, ‘visdat’ are not available for package ‘naniar’"
+  ],
+  "test_fail": [
+    "This is a generic error message that should not match",
+    "Installation completed successfully"
+  ],
+  "packages": [
+    {
+      "name": "generics",
+      "manager": "cran"
+    },
+    {
+      "name": "dplyr",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyr",
+      "manager": "cran"
+    },
+    {
+      "name": "labelled",
+      "manager": "cran"
+    },
+    {
+      "name": "visdat",
+      "manager": "cran"
+    },
+    {
+      "name": "naniar",
+      "manager": "cran"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "matcher": "gdal-config not found or not executable",
+  "test_ok": [
+    "configure: error: gdal-config not found or not executable."
+  ],
+  "test_fail": [
+    "checking for gdal-config... yes",
+    "configuration failed for package ‘xyz’",
+    "non-zero exit status"
+  ],
+  "packages": [
+    {
+      "name": "gdal-bin",
+      "manager": "apt"
+    },
+    {
+      "name": "terra",
+      "manager": "cran"
+    }
+  ]
+}

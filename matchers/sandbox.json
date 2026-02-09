@@ -1,0 +1,15 @@
+{
+  "matcher": "ERROR: dependency ‘RLumModel’ is not available for package ‘sandbox’",
+  "test_ok": [
+    "ERROR: dependency ‘RLumModel’ is not available for package ‘sandbox’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘AnotherPackage’ is not available for package ‘sandbox’"
+  ],
+  "packages": [
+    {
+      "name": "RLumModel",
+      "manager": "cran"
+    }
+  ]
+}

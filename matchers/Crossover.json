@@ -1,0 +1,20 @@
+{
+  "matcher": "(?s)Java interpreter '.*/bin/java' does not work.+installation of package .*/rJava_.+ had non-zero exit status",
+  "test_ok": [
+    "configure: error: Java interpreter '/usr/lib/jvm/default-java/bin/java' does not work\nERROR: configuration failed for package ‘rJava’\ninstallation of package ‘/credo_env/credoenv/cran/rJava_1.0-11.tar.gz’ had non-zero exit status"
+  ],
+  "test_fail": [
+    "successful installation of package ‘/credo_env/credoenv/cran/rJava_1.0-11.tar.gz’ had zero exit status",
+    "configure: success: Java interpreter works"
+  ],
+  "packages": [
+    {
+      "name": "default-jre",
+      "manager": "apt"
+    },
+    {
+      "name": "rJava",
+      "manager": "cran"
+    }
+  ]
+}

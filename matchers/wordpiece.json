@@ -1,0 +1,31 @@
+{
+  "matcher": "ERROR: dependency ‘[a-zA-Z]+’ is not available for package ‘[a-zA-Z]+’",
+  "test_ok": [
+    "ERROR: dependency ‘lifecycle’ is not available for package ‘vctrs’",
+    "ERROR: dependency ‘vctrs’ is not available for package ‘stringr’",
+    "ERROR: dependency ‘stringr’ is not available for package ‘piecemaker’",
+    "ERROR: dependency ‘piecemaker’ is not available for package ‘wordpiece’"
+  ],
+  "test_fail": [
+    "installation of package had non-zero exit status",
+    "dependency lifecycle' is not an installable package"
+  ],
+  "packages": [
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "stringr",
+      "manager": "cran"
+    },
+    {
+      "name": "piecemaker",
+      "manager": "cran"
+    }
+  ]
+}

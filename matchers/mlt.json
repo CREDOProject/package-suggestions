@@ -1,0 +1,16 @@
+{
+  "matcher": "ERROR: dependency ‘coneproj’ is not available for package ‘mlt’",
+  "test_ok": [
+    "ERROR: dependency ‘coneproj’ is not available for package ‘mlt’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘randompkg’ is not available for package ‘mlt’",
+    "This is a generic error message unrelated to dependencies"
+  ],
+  "packages": [
+    {
+      "name": "coneproj",
+      "manager": "cran"
+    }
+  ]
+}

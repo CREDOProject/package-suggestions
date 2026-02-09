@@ -1,0 +1,25 @@
+{
+  "matcher": "ERROR: dependenc(ies|y).* (are|is) not available",
+  "test_ok": [
+    "ERROR: dependencies ‘rms’, ‘riskRegression’ are not available for package ‘pec’",
+    "ERROR: dependency ‘pec’ is not available for package ‘bnnSurvival’"
+  ],
+  "test_fail": [
+    "All dependencies are satisfied",
+    "No errors in package installation"
+  ],
+  "packages": [
+    {
+      "name": "rms",
+      "manager": "cran"
+    },
+    {
+      "name": "riskRegression",
+      "manager": "cran"
+    },
+    {
+      "name": "pec",
+      "manager": "cran"
+    }
+  ]
+}

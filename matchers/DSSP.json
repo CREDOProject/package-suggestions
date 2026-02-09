@@ -1,0 +1,36 @@
+{
+  "matcher": "^[\\[]credo[\\]] testing library load in R$",
+  "test_ok": [
+    "[credo] testing library load in R"
+  ],
+  "test_fail": [
+    "[credo] installed packages successfully",
+    "[credo] error loading some other library"
+  ],
+  "packages": [
+    {
+      "name": "apt-utils",
+      "manager": "apt"
+    },
+    {
+      "name": "r-base-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libcurl4-openssl-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libssl-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libxml2-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "libpcre2-dev",
+      "manager": "apt"
+    }
+  ]
+}

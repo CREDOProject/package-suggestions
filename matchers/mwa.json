@@ -1,0 +1,45 @@
+{
+  "matcher": "ERROR: dependency ‘.*’ is not available for package ‘.*’",
+  "test_ok": [
+    "ERROR: dependency ‘glue’ is not available for package ‘lifecycle’",
+    "ERROR: dependency ‘MatchIt’ is not available for package ‘cem’"
+  ],
+  "test_fail": [
+    "Error: Could not find function",
+    "Warning: package ‘pkg’ was built under R version"
+  ],
+  "packages": [
+    {
+      "name": "glue",
+      "manager": "cran"
+    },
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "chk",
+      "manager": "cran"
+    },
+    {
+      "name": "MatchIt",
+      "manager": "cran"
+    },
+    {
+      "name": "cem",
+      "manager": "cran"
+    },
+    {
+      "name": "rJava",
+      "manager": "cran"
+    },
+    {
+      "name": "mwa",
+      "manager": "cran"
+    },
+    {
+      "name": "openjdk-11-jdk",
+      "manager": "apt"
+    }
+  ]
+}

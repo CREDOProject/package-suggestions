@@ -1,0 +1,25 @@
+{
+  "matcher": "configuration failed for package ‘rJava’|Java interpreter '.*bin/java' does not work",
+  "test_ok": [
+    "ERROR: configuration failed for package ‘rJava’",
+    "configure: error: Java interpreter '/usr/lib/jvm/default-java/bin/java' does not work"
+  ],
+  "test_fail": [
+    "Successfully installed the package 'rJava'",
+    "Java interpreter is functioning correctly"
+  ],
+  "packages": [
+    {
+      "name": "r-base-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "default-jdk",
+      "manager": "apt"
+    },
+    {
+      "name": "rJava",
+      "manager": "cran"
+    }
+  ]
+}

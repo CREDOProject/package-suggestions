@@ -1,0 +1,18 @@
+{
+  "matcher": "(?i)ERROR: (?:Could not find a version that satisfies the requirement|No matching distribution found for)\\s+PIL",
+  "test_ok": [
+    "ERROR: Could not find a version that satisfies the requirement PIL (from versions: none)",
+    "ERROR: No matching distribution found for PIL"
+  ],
+  "test_fail": [
+    "ERROR: No matching distribution found for numpy",
+    "ERROR: Failed to build wheels for some-package",
+    "Error: bareRun, running pip command: exit status 1"
+  ],
+  "packages": [
+    {
+      "name": "Pillow",
+      "manager": "pip"
+    }
+  ]
+}

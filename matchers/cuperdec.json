@@ -1,0 +1,41 @@
+{
+  "matcher": "ERROR: dependency ‘[^’]+’ is not available for package ‘[^’]+’",
+  "test_ok": [
+    "ERROR: dependency ‘vctrs’ is not available for package ‘pillar’",
+    "ERROR: dependency ‘pillar’ is not available for package ‘tibble’"
+  ],
+  "test_fail": [
+    "ERROR: unexpected end of input",
+    "ERROR: non-numeric argument to binary operator"
+  ],
+  "packages": [
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "tibble",
+      "manager": "cran"
+    },
+    {
+      "name": "dplyr",
+      "manager": "cran"
+    },
+    {
+      "name": "vroom",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyr",
+      "manager": "cran"
+    },
+    {
+      "name": "readr",
+      "manager": "cran"
+    }
+  ]
+}

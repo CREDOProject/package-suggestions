@@ -1,0 +1,16 @@
+{
+  "matcher": "ERROR: dependency ‘recommenderlab’ is not available for package ‘recommenderlabBX’",
+  "test_ok": [
+    "ERROR: dependency ‘recommenderlab’ is not available for package ‘recommenderlabBX’"
+  ],
+  "test_fail": [
+    "ERROR: package ‘randomPackage’ is not available",
+    "Succeeded in installing ‘recommenderlab’"
+  ],
+  "packages": [
+    {
+      "name": "recommenderlab",
+      "manager": "cran"
+    }
+  ]
+}

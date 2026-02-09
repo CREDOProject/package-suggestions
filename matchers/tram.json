@@ -1,0 +1,21 @@
+{
+  "matcher": "ERROR: dependency ‘coneproj’ is not available for package ‘mlt’|ERROR: dependency ‘mlt’ is not available for package ‘tram’",
+  "test_ok": [
+    "ERROR: dependency ‘coneproj’ is not available for package ‘mlt’",
+    "ERROR: dependency ‘mlt’ is not available for package ‘tram’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘otherpkg’ is not available for package ‘mlt’",
+    "ERROR: dependency ‘mlt’ is not available for package ‘otherpkg’"
+  ],
+  "packages": [
+    {
+      "name": "coneproj",
+      "manager": "cran"
+    },
+    {
+      "name": "mlt",
+      "manager": "cran"
+    }
+  ]
+}

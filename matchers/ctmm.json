@@ -1,0 +1,40 @@
+{
+  "matcher": "gdal-config not found or not executable",
+  "test_ok": [
+    "configure: error: gdal-config not found or not executable"
+  ],
+  "test_fail": [
+    "configure: error: dependency XYZ not found",
+    "Warning: something unrelated happened"
+  ],
+  "packages": [
+    {
+      "name": "gdal-bin",
+      "manager": "apt"
+    },
+    {
+      "name": "libgdal-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "sf",
+      "manager": "cran"
+    },
+    {
+      "name": "terra",
+      "manager": "cran"
+    },
+    {
+      "name": "raster",
+      "manager": "cran"
+    },
+    {
+      "name": "ctmm",
+      "manager": "cran"
+    },
+    {
+      "name": "gsl",
+      "manager": "cran"
+    }
+  ]
+}

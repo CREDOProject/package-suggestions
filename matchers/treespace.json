@@ -1,0 +1,20 @@
+{
+  "matcher": "ERROR: dependency ‘RLumShiny’ is not available for package ‘treespace’",
+  "test_ok": [
+    "ERROR: dependency ‘RLumShiny’ is not available for package ‘treespace’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘someotherpackage’ is not available",
+    "ERROR: something else went wrong"
+  ],
+  "packages": [
+    {
+      "name": "RLumShiny",
+      "manager": "cran"
+    },
+    {
+      "name": "treespace",
+      "manager": "cran"
+    }
+  ]
+}

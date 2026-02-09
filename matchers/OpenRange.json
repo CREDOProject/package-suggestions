@@ -1,0 +1,23 @@
+{
+  "matcher": "gdal-config not found|libpq-fe\\.h: No such file or directory|compilation failed for package ‘RPostgreSQL’",
+  "test_ok": [
+    "configure: error: gdal-config not found or not executable.",
+    "RS-PostgreSQL.h:23:14: fatal error: libpq-fe.h: No such file or directory",
+    "ERROR: compilation failed for package ‘RPostgreSQL’"
+  ],
+  "test_fail": [
+    "gcc: no input files",
+    "installing to library '/usr/local/lib/R/site-library'",
+    "package ‘xyz’ is not available"
+  ],
+  "packages": [
+    {
+      "name": "gdal-bin",
+      "manager": "apt"
+    },
+    {
+      "name": "libpq-dev",
+      "manager": "apt"
+    }
+  ]
+}

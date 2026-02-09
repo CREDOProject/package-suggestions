@@ -1,0 +1,25 @@
+{
+  "matcher": "ERROR: dependencies ‘lifecycle’, ‘vctrs’ are not available for package ‘stringr’",
+  "test_ok": [
+    "ERROR: dependencies ‘lifecycle’, ‘vctrs’ are not available for package ‘stringr’"
+  ],
+  "test_fail": [
+    "ERROR: missing package",
+    "ERROR: configuration failed",
+    "package not found"
+  ],
+  "packages": [
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "gdal-bin",
+      "manager": "apt"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "matcher": "ERROR: dependenc(ies|y) [‘'“].+[’'”] (are|is) not available for package [‘'“].+[’'”]",
+  "test_ok": [
+    "ERROR: dependency ‘Biobase’ is not available for package ‘SummarizedExperiment’",
+    "ERROR: dependency ‘SummarizedExperiment’ is not available for package ‘DESeq2’",
+    "ERROR: dependency ‘RcppGSL’ is not available for package ‘mashr’",
+    "ERROR: dependencies ‘DESeq2’, ‘mashr’ are not available for package ‘limorhyde2’"
+  ],
+  "test_fail": [
+    "ERROR: configuration failed for package ‘RcppGSL’",
+    "ERROR: dependency ‘unknownPackage’ is not available"
+  ],
+  "packages": [
+    {
+      "name": "Biobase",
+      "manager": "bioconductor"
+    },
+    {
+      "name": "SummarizedExperiment",
+      "manager": "bioconductor"
+    },
+    {
+      "name": "DESeq2",
+      "manager": "bioconductor"
+    },
+    {
+      "name": "RcppGSL",
+      "manager": "cran"
+    },
+    {
+      "name": "mashr",
+      "manager": "cran"
+    },
+    {
+      "name": "limorhyde2",
+      "manager": "cran"
+    }
+  ]
+}

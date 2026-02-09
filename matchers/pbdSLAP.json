@@ -1,0 +1,19 @@
+{
+  "matcher": "Cannot find mpi\\.h header file",
+  "test_ok": [
+    "configure: error: \"Cannot find mpi.h header file\""
+  ],
+  "test_fail": [
+    "Some other error unrelated to mpi.h"
+  ],
+  "packages": [
+    {
+      "name": "libmpich-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "pbdMPI",
+      "manager": "cran"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "matcher": "gdal-config not found or not executable",
+  "test_ok": [
+    "configure: error: gdal-config not found or not executable."
+  ],
+  "test_fail": [
+    "gdal-config is installed and executable",
+    "A different configuration error occurred"
+  ],
+  "packages": [
+    {
+      "name": "gdal-bin",
+      "manager": "apt"
+    },
+    {
+      "name": "libgdal-dev",
+      "manager": "apt"
+    }
+  ]
+}

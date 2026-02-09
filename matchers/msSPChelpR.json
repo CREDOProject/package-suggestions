@@ -1,0 +1,26 @@
+{
+  "matcher": "ERROR: dependency ‘(tidyr|cpp11)’ is not available for package ‘(tidyr|msSPChelpR)’",
+  "test_ok": [
+    "ERROR: dependency ‘cpp11’ is not available for package ‘tidyr’",
+    "ERROR: dependency ‘tidyr’ is not available for package ‘msSPChelpR’"
+  ],
+  "test_fail": [
+    "Successfully installed package ‘tidyr’",
+    "Installed package without errors",
+    "WARNING: no available downloads for package ‘msSPChelpR’"
+  ],
+  "packages": [
+    {
+      "name": "cpp11",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyr",
+      "manager": "cran"
+    },
+    {
+      "name": "apt-utils",
+      "manager": "apt"
+    }
+  ]
+}

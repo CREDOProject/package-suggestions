@@ -1,0 +1,26 @@
+{
+  "matcher": "ERROR: dependency ‘([^’]+)’ is not available for package ‘([^’]+)’",
+  "test_ok": [
+    "ERROR: dependency ‘cli’ is not available for package ‘lava’",
+    "ERROR: dependency ‘lava’ is not available for package ‘timereg’",
+    "ERROR: dependency ‘timereg’ is not available for package ‘multimediate’"
+  ],
+  "test_fail": [
+    "ERROR: issue loading package",
+    "Installation failed due to network error"
+  ],
+  "packages": [
+    {
+      "name": "cli",
+      "manager": "cran"
+    },
+    {
+      "name": "lava",
+      "manager": "cran"
+    },
+    {
+      "name": "timereg",
+      "manager": "cran"
+    }
+  ]
+}

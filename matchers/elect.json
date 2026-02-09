@@ -1,0 +1,40 @@
+{
+  "matcher": "ERROR: dependency ‘[a-zA-Z]+’ is not available for package ‘[a-zA-Z]+’",
+  "test_ok": [
+    "ERROR: dependency ‘lifecycle’ is not available for package ‘vctrs’",
+    "ERROR: dependency ‘tibble’ is not available for package ‘msm’"
+  ],
+  "test_fail": [
+    "testing if installed package can be loaded from temporary location"
+  ],
+  "packages": [
+    {
+      "name": "rlang",
+      "manager": "cran"
+    },
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "tibble",
+      "manager": "cran"
+    },
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "msm",
+      "manager": "cran"
+    },
+    {
+      "name": "elect",
+      "manager": "cran"
+    }
+  ]
+}

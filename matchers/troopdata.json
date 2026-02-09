@@ -1,0 +1,31 @@
+{
+  "matcher": "dependenc(ies|y) .*(pillar|R6|tibble|dplyr).* (are|is) not available for package",
+  "test_ok": [
+    "ERROR: dependency ‘pillar’ is not available for package ‘tibble’",
+    "ERROR: dependencies ‘R6’, ‘tibble’ are not available for package ‘dplyr’",
+    "ERROR: dependency ‘dplyr’ is not available for package ‘troopdata’"
+  ],
+  "test_fail": [
+    "installation of package had non-zero exit status",
+    "building package indices",
+    "testing if installed package can be loaded from final location"
+  ],
+  "packages": [
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "R6",
+      "manager": "cran"
+    },
+    {
+      "name": "tibble",
+      "manager": "cran"
+    },
+    {
+      "name": "dplyr",
+      "manager": "cran"
+    }
+  ]
+}

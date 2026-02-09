@@ -1,0 +1,20 @@
+{
+  "matcher": "ERROR: dependency ‘rms’ is not available for package ‘ordcrm’",
+  "test_ok": [
+    "ERROR: dependency ‘rms’ is not available for package ‘ordcrm’"
+  ],
+  "test_fail": [
+    "dependency ‘xyz’ is not available for package ‘abc’",
+    "dependency ‘rms’ is not available for package ‘otherpkg’"
+  ],
+  "packages": [
+    {
+      "name": "rms",
+      "manager": "cran"
+    },
+    {
+      "name": "ordcrm",
+      "manager": "cran"
+    }
+  ]
+}

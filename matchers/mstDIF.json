@@ -1,0 +1,34 @@
+{
+  "matcher": "ERROR: dependenc(ies|y) .*desc.* (are|is) not available for package .*pkg.*",
+  "test_ok": [
+    "ERROR: dependency ‘desc’ is not available for package ‘pkgbuild’",
+    "ERROR: dependency ‘desc’ is not available for package ‘pkgload’",
+    "ERROR: dependencies ‘desc’, ‘pkgbuild’ are not available for package ‘pkgload’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘SimDesign’ is not available for package ‘mirt’",
+    "DONE (expm)"
+  ],
+  "packages": [
+    {
+      "name": "desc",
+      "manager": "cran"
+    },
+    {
+      "name": "pkgbuild",
+      "manager": "cran"
+    },
+    {
+      "name": "SimDesign",
+      "manager": "cran"
+    },
+    {
+      "name": "mirt",
+      "manager": "cran"
+    },
+    {
+      "name": "scDIFtest",
+      "manager": "cran"
+    }
+  ]
+}

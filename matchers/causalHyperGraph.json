@@ -1,0 +1,16 @@
+{
+  "matcher": "E: Unable to locate package or",
+  "test_ok": [
+    "E: Unable to locate package or"
+  ],
+  "test_fail": [
+    "E: Unable to locate package curl",
+    "Unable to locate package"
+  ],
+  "packages": [
+    {
+      "name": "apt-utils",
+      "manager": "apt"
+    }
+  ]
+}

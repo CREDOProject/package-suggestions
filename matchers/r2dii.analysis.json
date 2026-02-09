@@ -1,0 +1,60 @@
+{
+  "matcher": "ERROR: dependency ‘lifecycle’ is not available for package",
+  "test_ok": [
+    "ERROR: dependency ‘lifecycle’ is not available for package ‘vctrs’"
+  ],
+  "test_fail": [
+    "ERROR: something else went wrong",
+    "Package installation complete without errors"
+  ],
+  "packages": [
+    {
+      "name": "rlang",
+      "manager": "cran"
+    },
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyselect",
+      "manager": "cran"
+    },
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "tibble",
+      "manager": "cran"
+    },
+    {
+      "name": "dplyr",
+      "manager": "cran"
+    },
+    {
+      "name": "purrr",
+      "manager": "cran"
+    },
+    {
+      "name": "r2dii.data",
+      "manager": "cran"
+    },
+    {
+      "name": "r2dii.analysis",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyr",
+      "manager": "cran"
+    },
+    {
+      "name": "zoo",
+      "manager": "cran"
+    }
+  ]
+}

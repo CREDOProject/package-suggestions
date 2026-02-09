@@ -1,0 +1,36 @@
+{
+  "matcher": "configure: error: gdal-config not found or not executable",
+  "test_ok": [
+    "configure: error: gdal-config not found or not executable"
+  ],
+  "test_fail": [
+    "gdal-config found and executable",
+    "missing some other config"
+  ],
+  "packages": [
+    {
+      "name": "gdal-bin",
+      "manager": "apt"
+    },
+    {
+      "name": "sf",
+      "manager": "cran"
+    },
+    {
+      "name": "stars",
+      "manager": "cran"
+    },
+    {
+      "name": "sftime",
+      "manager": "cran"
+    },
+    {
+      "name": "gstat",
+      "manager": "cran"
+    },
+    {
+      "name": "phenmod",
+      "manager": "cran"
+    }
+  ]
+}

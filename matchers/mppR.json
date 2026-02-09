@@ -1,0 +1,40 @@
+{
+  "matcher": "ERROR: dependency ‘[^’]+’ is not available for package",
+  "test_ok": [
+    "ERROR: dependency ‘rlang’ is not available for package ‘lifecycle’"
+  ],
+  "test_fail": [
+    "ERROR: package ‘xyz’ is not available",
+    "installation of package had non-zero exit status"
+  ],
+  "packages": [
+    {
+      "name": "rlang",
+      "manager": "cran"
+    },
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "gtable",
+      "manager": "cran"
+    },
+    {
+      "name": "scales",
+      "manager": "cran"
+    },
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "tibble",
+      "manager": "cran"
+    }
+  ]
+}

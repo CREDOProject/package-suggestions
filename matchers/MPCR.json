@@ -1,0 +1,21 @@
+{
+  "matcher": "Could NOT find LAPACK \\(missing: LAPACK_LIBRARIES\\)|package or namespace load failed for ‘MPCR’",
+  "test_ok": [
+    "Could NOT find LAPACK (missing: LAPACK_LIBRARIES)",
+    "package or namespace load failed for ‘MPCR’"
+  ],
+  "test_fail": [
+    "All dependencies are correctly installed",
+    "The tool ran successfully without errors"
+  ],
+  "packages": [
+    {
+      "name": "liblapack-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "MPCR",
+      "manager": "cran"
+    }
+  ]
+}

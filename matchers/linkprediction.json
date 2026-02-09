@@ -1,0 +1,48 @@
+{
+  "matcher": "dependency ‘lifecycle’ is not available for package|dependency ‘vctrs’ is not available for package",
+  "test_ok": [
+    "ERROR: dependency ‘lifecycle’ is not available for package ‘lifecycle’",
+    "ERROR: dependency ‘vctrs’ is not available for package ‘pillar’"
+  ],
+  "test_fail": [
+    "ERROR: some other error"
+  ],
+  "packages": [
+    {
+      "name": "rlang",
+      "manager": "cran"
+    },
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "tibble",
+      "manager": "cran"
+    },
+    {
+      "name": "network",
+      "manager": "cran"
+    },
+    {
+      "name": "intergraph",
+      "manager": "cran"
+    },
+    {
+      "name": "igraph",
+      "manager": "cran"
+    },
+    {
+      "name": "linkprediction",
+      "manager": "cran"
+    }
+  ]
+}

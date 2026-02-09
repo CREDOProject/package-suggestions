@@ -1,0 +1,21 @@
+{
+  "matcher": "ERROR: dependency .* is not available for package .*",
+  "test_ok": [
+    "ERROR: dependency ‘gamm4’ is not available for package ‘refund’",
+    "ERROR: dependency ‘refund’ is not available for package ‘longsurr’"
+  ],
+  "test_fail": [
+    "ERROR: package ‘abc’ is not available (for R version 4.0.0)",
+    "Warning: package ‘xyz’ was built under R version 3.6.3"
+  ],
+  "packages": [
+    {
+      "name": "gamm4",
+      "manager": "cran"
+    },
+    {
+      "name": "refund",
+      "manager": "cran"
+    }
+  ]
+}

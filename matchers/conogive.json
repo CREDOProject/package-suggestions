@@ -1,0 +1,21 @@
+{
+  "matcher": "ERROR: dependency ‘.+’ is not available for package ‘.+’",
+  "test_ok": [
+    "ERROR: dependency ‘GPArotation’ is not available for package ‘psych’",
+    "ERROR: dependency ‘psych’ is not available for package ‘conogive’"
+  ],
+  "test_fail": [
+    "ERROR in some other process",
+    "Dependency issues with some package"
+  ],
+  "packages": [
+    {
+      "name": "GPArotation",
+      "manager": "cran"
+    },
+    {
+      "name": "psych",
+      "manager": "cran"
+    }
+  ]
+}

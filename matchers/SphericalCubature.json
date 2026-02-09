@@ -1,0 +1,20 @@
+{
+  "matcher": "GNU MP not found, see README\\nERROR: configuration failed for package ‘rcdd’",
+  "test_ok": [
+    "configure: error: GNU MP not found, see README\nERROR: configuration failed for package ‘rcdd’"
+  ],
+  "test_fail": [
+    "configuration succeeded for package ‘rcdd’",
+    "GNU MP found"
+  ],
+  "packages": [
+    {
+      "name": "libgmp-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "rcdd",
+      "manager": "cran"
+    }
+  ]
+}

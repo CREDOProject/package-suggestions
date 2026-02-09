@@ -1,0 +1,28 @@
+{
+  "matcher": "ERROR: dependencies [‘']httpuv[’'], [‘']promises[’'] are not available for package [‘']shiny[’']",
+  "test_ok": [
+    "ERROR: dependencies ‘httpuv’, ‘promises’ are not available for package ‘shiny’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘randompkg’ is not available for package ‘shiny’",
+    "ERROR: dependencies ‘httpuv’, ‘differentpackage’ are not available for package ‘shiny’"
+  ],
+  "packages": [
+    {
+      "name": "later",
+      "manager": "cran"
+    },
+    {
+      "name": "promises",
+      "manager": "cran"
+    },
+    {
+      "name": "httpuv",
+      "manager": "cran"
+    },
+    {
+      "name": "shiny",
+      "manager": "cran"
+    }
+  ]
+}

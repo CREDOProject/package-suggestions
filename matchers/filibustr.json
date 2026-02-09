@@ -1,0 +1,41 @@
+{
+  "matcher": "ERROR: dependency ‘[^’]+’ is not available for package ‘[^’]+’",
+  "test_ok": [
+    "ERROR: dependency ‘xml2’ is not available for package ‘rvest’",
+    "ERROR: dependency ‘dplyr’ is not available for package ‘tidyr’"
+  ],
+  "test_fail": [
+    "ERROR: installation of package failed",
+    "ERROR: failed to create symbolic link"
+  ],
+  "packages": [
+    {
+      "name": "cli",
+      "manager": "cran"
+    },
+    {
+      "name": "xml2",
+      "manager": "cran"
+    },
+    {
+      "name": "generics",
+      "manager": "cran"
+    },
+    {
+      "name": "dplyr",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyr",
+      "manager": "cran"
+    },
+    {
+      "name": "labelled",
+      "manager": "cran"
+    },
+    {
+      "name": "rvest",
+      "manager": "cran"
+    }
+  ]
+}

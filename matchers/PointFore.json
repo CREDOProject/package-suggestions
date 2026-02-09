@@ -1,0 +1,31 @@
+{
+  "matcher": "ERROR: dependency ‘.*’ is not available for package ‘.*’",
+  "test_ok": [
+    "ERROR: dependency ‘modelr’ is not available for package ‘doBy’",
+    "ERROR: dependency ‘doBy’ is not available for package ‘pbkrtest’",
+    "ERROR: dependency ‘pbkrtest’ is not available for package ‘car’",
+    "ERROR: dependency ‘car’ is not available for package ‘PointFore’"
+  ],
+  "test_fail": [
+    "gcc -I\"/usr/share/R/include\" -DNDEBUG ....",
+    "[credo] testing library load in R"
+  ],
+  "packages": [
+    {
+      "name": "modelr",
+      "manager": "cran"
+    },
+    {
+      "name": "doBy",
+      "manager": "cran"
+    },
+    {
+      "name": "pbkrtest",
+      "manager": "cran"
+    },
+    {
+      "name": "car",
+      "manager": "cran"
+    }
+  ]
+}

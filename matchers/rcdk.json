@@ -1,0 +1,28 @@
+{
+  "matcher": "configure: error: Java interpreter '.*/bin/java' does not work",
+  "test_ok": [
+    "configure: error: Java interpreter '/usr/lib/jvm/default-java/bin/java' does not work"
+  ],
+  "test_fail": [
+    "configure: error: Some other error message",
+    "Java interpreter '/usr/lib/jvm/default-java/bin/java' is working"
+  ],
+  "packages": [
+    {
+      "name": "default-jre",
+      "manager": "apt"
+    },
+    {
+      "name": "rJava",
+      "manager": "cran"
+    },
+    {
+      "name": "rcdklibs",
+      "manager": "cran"
+    },
+    {
+      "name": "rcdk",
+      "manager": "cran"
+    }
+  ]
+}

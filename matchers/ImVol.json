@@ -1,0 +1,41 @@
+{
+  "matcher": "ERROR: dependency ‘[^’]+’ is not available for package ‘[^’]+’",
+  "test_ok": [
+    "ERROR: dependency ‘htmltools’ is not available for package ‘sass’",
+    "ERROR: dependency ‘sass’ is not available for package ‘bslib’",
+    "ERROR: dependency ‘bslib’ is not available for package ‘rmarkdown’",
+    "ERROR: dependency ‘reprex’ is not available for package ‘tidyverse’",
+    "ERROR: dependency ‘tidyverse’ is not available for package ‘ImVol’"
+  ],
+  "test_fail": [
+    "ERROR: some unrelated error message",
+    "Dependency missing but no specific package mentioned",
+    "*** installing help indices"
+  ],
+  "packages": [
+    {
+      "name": "htmltools",
+      "manager": "cran"
+    },
+    {
+      "name": "sass",
+      "manager": "cran"
+    },
+    {
+      "name": "bslib",
+      "manager": "cran"
+    },
+    {
+      "name": "rmarkdown",
+      "manager": "cran"
+    },
+    {
+      "name": "reprex",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyverse",
+      "manager": "cran"
+    }
+  ]
+}

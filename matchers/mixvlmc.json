@@ -1,0 +1,53 @@
+{
+  "matcher": "ERROR: dependency ‘[a-z]+’ is not available for package ‘[a-z]+’",
+  "test_ok": [
+    "ERROR: dependency ‘glue’ is not available for package ‘lifecycle’",
+    "ERROR: dependency ‘lifecycle’ is not available for package ‘vctrs’"
+  ],
+  "test_fail": [
+    "Installation successful.",
+    "All dependencies are met."
+  ],
+  "packages": [
+    {
+      "name": "glue",
+      "manager": "cran"
+    },
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "scales",
+      "manager": "cran"
+    },
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "tibble",
+      "manager": "cran"
+    },
+    {
+      "name": "purrr",
+      "manager": "cran"
+    },
+    {
+      "name": "butcher",
+      "manager": "cran"
+    },
+    {
+      "name": "ggplot2",
+      "manager": "cran"
+    },
+    {
+      "name": "stringr",
+      "manager": "cran"
+    }
+  ]
+}

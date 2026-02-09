@@ -1,0 +1,53 @@
+{
+  "matcher": "ERROR: dependency ‘[\\w]+’ is not available for package ‘[\\w]+’",
+  "test_ok": [
+    "ERROR: dependency ‘fs’ is not available for package ‘sass’",
+    "ERROR: dependency ‘rmarkdown’ is not available for package ‘htmlwidgets’"
+  ],
+  "test_fail": [
+    "All packages installed successfully",
+    "ERROR: package ‘xyz’ not found"
+  ],
+  "packages": [
+    {
+      "name": "fs",
+      "manager": "cran"
+    },
+    {
+      "name": "sass",
+      "manager": "cran"
+    },
+    {
+      "name": "bslib",
+      "manager": "cran"
+    },
+    {
+      "name": "rmarkdown",
+      "manager": "cran"
+    },
+    {
+      "name": "htmlwidgets",
+      "manager": "cran"
+    },
+    {
+      "name": "plotly",
+      "manager": "cran"
+    },
+    {
+      "name": "shiny",
+      "manager": "cran"
+    },
+    {
+      "name": "miniUI",
+      "manager": "cran"
+    },
+    {
+      "name": "shinyjqui",
+      "manager": "cran"
+    },
+    {
+      "name": "shinyFiles",
+      "manager": "cran"
+    }
+  ]
+}

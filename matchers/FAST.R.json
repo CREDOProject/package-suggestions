@@ -1,0 +1,35 @@
+{
+  "matcher": "ERROR: dependency ‘tidyr’ is not available for package ‘recipes’|ERROR: dependency ‘recipes’ is not available for package ‘caret’|ERROR: dependencies ‘caret’, ‘tidyr’ are not available for package ‘FAST.R’",
+  "test_ok": [
+    "ERROR: dependency ‘tidyr’ is not available for package ‘recipes’",
+    "ERROR: dependency ‘recipes’ is not available for package ‘caret’",
+    "ERROR: dependencies ‘caret’, ‘tidyr’ are not available for package ‘FAST.R’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘glmnet’ is not available for package ‘caret’",
+    "ERROR: dependency ‘dplyr’ is not available for package ‘anotherpackage’",
+    "Installations were successful."
+  ],
+  "packages": [
+    {
+      "name": "tidyr",
+      "manager": "cran"
+    },
+    {
+      "name": "dplyr",
+      "manager": "cran"
+    },
+    {
+      "name": "recipes",
+      "manager": "cran"
+    },
+    {
+      "name": "caret",
+      "manager": "cran"
+    },
+    {
+      "name": "FAST.R",
+      "manager": "cran"
+    }
+  ]
+}

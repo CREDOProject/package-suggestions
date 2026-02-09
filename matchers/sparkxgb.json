@@ -1,0 +1,20 @@
+{
+  "matcher": "ERROR: dependency ‘[^’]+’ is not available for package ‘[^’]+’",
+  "test_ok": [
+    "ERROR: dependency ‘uuid’ is not available for package ‘sparklyr’"
+  ],
+  "test_fail": [
+    "ERROR: some other error unrelated to dependencies",
+    "Missing file error"
+  ],
+  "packages": [
+    {
+      "name": "uuid",
+      "manager": "cran"
+    },
+    {
+      "name": "sparklyr",
+      "manager": "cran"
+    }
+  ]
+}

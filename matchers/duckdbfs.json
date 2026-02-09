@@ -1,0 +1,59 @@
+{
+  "matcher": "dependencies ‘lifecycle’, ‘vctrs’ are not available for package",
+  "test_ok": [
+    "ERROR: dependencies ‘lifecycle’, ‘vctrs’ are not available for package ‘purrr’"
+  ],
+  "test_fail": [
+    "ERROR: package ‘purrr’ is not available (for R version 4.0.2)"
+  ],
+  "packages": [
+    {
+      "name": "rlang",
+      "manager": "cran"
+    },
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "tibble",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyselect",
+      "manager": "cran"
+    },
+    {
+      "name": "dplyr",
+      "manager": "cran"
+    },
+    {
+      "name": "purrr",
+      "manager": "cran"
+    },
+    {
+      "name": "stringr",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyr",
+      "manager": "cran"
+    },
+    {
+      "name": "dbplyr",
+      "manager": "cran"
+    },
+    {
+      "name": "duckdbfs",
+      "manager": "cran"
+    }
+  ]
+}

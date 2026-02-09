@@ -1,0 +1,19 @@
+{
+  "matcher": "configure: error: Java interpreter '.*/bin/java' does not work",
+  "test_ok": [
+    "configure: error: Java interpreter '/usr/lib/jvm/default-java/bin/java' does not work"
+  ],
+  "test_fail": [
+    "configure: error: C compiler cannot create executables"
+  ],
+  "packages": [
+    {
+      "name": "default-jre",
+      "manager": "apt"
+    },
+    {
+      "name": "r-cran-rjava",
+      "manager": "cran"
+    }
+  ]
+}

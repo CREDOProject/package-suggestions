@@ -1,0 +1,20 @@
+{
+  "matcher": "ERROR: compilation failed for package ‘Rglpk’",
+  "test_ok": [
+    "ERROR: compilation failed for package ‘Rglpk’"
+  ],
+  "test_fail": [
+    "ERROR: compilation succeeded for package 'Rglpk'",
+    "ERROR: compilation failed for package ‘quadprog’"
+  ],
+  "packages": [
+    {
+      "name": "libglpk-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "Rglpk",
+      "manager": "cran"
+    }
+  ]
+}

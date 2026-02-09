@@ -1,0 +1,33 @@
+{
+  "matcher": "ERROR: dependency ‘[a-zA-Z0-9\\.]+’ is not available for package ‘[a-zA-Z0-9\\.]+’",
+  "test_ok": [
+    "ERROR: dependency ‘pkgconfig’ is not available for package ‘tibble’",
+    "ERROR: dependency ‘dplyr’ is not available for package ‘easy.utils’"
+  ],
+  "test_fail": [
+    "Installation completed successfully",
+    "No errors found"
+  ],
+  "packages": [
+    {
+      "name": "pkgconfig",
+      "manager": "cran"
+    },
+    {
+      "name": "tibble",
+      "manager": "cran"
+    },
+    {
+      "name": "dplyr",
+      "manager": "cran"
+    },
+    {
+      "name": "easy.utils",
+      "manager": "cran"
+    },
+    {
+      "name": "hdf5r.Extra",
+      "manager": "cran"
+    }
+  ]
+}

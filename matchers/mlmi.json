@@ -1,0 +1,20 @@
+{
+  "matcher": "ERROR: dependency ‘gsl’ is not available for package ‘mlmi’",
+  "test_ok": [
+    "ERROR: dependency ‘gsl’ is not available for package ‘mlmi’"
+  ],
+  "test_fail": [
+    "ERROR: package ‘mlmi’ is not available for package ‘gsl’",
+    "ERROR: dependency ‘xyz’ is not available for package ‘mlmi’"
+  ],
+  "packages": [
+    {
+      "name": "libgsl-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "gsl",
+      "manager": "cran"
+    }
+  ]
+}

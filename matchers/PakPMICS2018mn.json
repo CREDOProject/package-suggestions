@@ -1,0 +1,36 @@
+{
+  "matcher": "ERROR: dependenc(ies|y) ‘.*’ (are|is) not available for package ‘.*’",
+  "test_ok": [
+    "ERROR: dependency ‘rlang’ is not available for package ‘lifecycle’",
+    "ERROR: dependency ‘lifecycle’ is not available for package ‘vctrs’",
+    "ERROR: dependencies ‘lifecycle’, ‘vctrs’ are not available for package ‘pillar’",
+    "ERROR: dependencies ‘lifecycle’, ‘pillar’, ‘vctrs’ are not available for package ‘tibble’",
+    "ERROR: dependency ‘tibble’ is not available for package ‘PakPMICS2018mn’"
+  ],
+  "test_fail": [
+    "This is a random error message without typical dependency errors",
+    "Installation succeeded without errors"
+  ],
+  "packages": [
+    {
+      "name": "rlang",
+      "manager": "cran"
+    },
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "tibble",
+      "manager": "cran"
+    }
+  ]
+}

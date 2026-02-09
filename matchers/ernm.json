@@ -1,0 +1,23 @@
+{
+  "matcher": "dependencies ‘lifecycle’, ‘vctrs’ are not available for package",
+  "test_ok": [
+    "ERROR: dependencies ‘lifecycle’, ‘vctrs’ are not available for package ‘stringr’",
+    "ERROR: dependencies ‘lifecycle’, ‘vctrs’ are not available for package ‘pillar’",
+    "ERROR: dependencies ‘lifecycle’, ‘vctrs’ are not available for package ‘purrr’"
+  ],
+  "test_fail": [
+    "ERROR: dependencies are not available",
+    "ERROR: package ‘tibble’ is not available for package ‘network’",
+    "Installation was successful"
+  ],
+  "packages": [
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    }
+  ]
+}

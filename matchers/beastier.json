@@ -1,0 +1,24 @@
+{
+  "matcher": "configuration failed for package ‘rJava’",
+  "test_ok": [
+    "ERROR: configuration failed for package ‘rJava’"
+  ],
+  "test_fail": [
+    "ERROR: configuration failed for package ‘some_other_package’",
+    "Java Error"
+  ],
+  "packages": [
+    {
+      "name": "r-cran-rjava",
+      "manager": "apt"
+    },
+    {
+      "name": "default-jre",
+      "manager": "apt"
+    },
+    {
+      "name": "default-jdk",
+      "manager": "apt"
+    }
+  ]
+}

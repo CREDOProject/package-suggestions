@@ -1,0 +1,48 @@
+{
+  "matcher": "ERROR: dependency .* is not available for package",
+  "test_ok": [
+    "ERROR: dependency ‘htmltools’ is not available for package ‘jquerylib’"
+  ],
+  "test_fail": [
+    "Everything is installed correctly",
+    "ERROR: Unexpected issue encountered"
+  ],
+  "packages": [
+    {
+      "name": "rlang",
+      "manager": "cran"
+    },
+    {
+      "name": "htmltools",
+      "manager": "cran"
+    },
+    {
+      "name": "jquerylib",
+      "manager": "cran"
+    },
+    {
+      "name": "sass",
+      "manager": "cran"
+    },
+    {
+      "name": "bslib",
+      "manager": "cran"
+    },
+    {
+      "name": "fontawesome",
+      "manager": "cran"
+    },
+    {
+      "name": "shiny",
+      "manager": "cran"
+    },
+    {
+      "name": "shinyMatrix",
+      "manager": "cran"
+    },
+    {
+      "name": "shinyBS",
+      "manager": "cran"
+    }
+  ]
+}

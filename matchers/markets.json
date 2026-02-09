@@ -1,0 +1,16 @@
+{
+  "matcher": "gsl-config not found, is GSL installed?",
+  "test_ok": [
+    "configure: error: gsl-config not found, is GSL installed?"
+  ],
+  "test_fail": [
+    "gcc -shared -L/usr/lib/R/lib",
+    "readelf: Error: /credo_env/credoenv/R-Library/00LOCK-RcppParallel/00new/RcppParallel/lib/libtbbmalloc.so"
+  ],
+  "packages": [
+    {
+      "name": "libgsl-dev",
+      "manager": "apt"
+    }
+  ]
+}

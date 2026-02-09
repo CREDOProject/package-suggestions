@@ -1,0 +1,66 @@
+{
+  "matcher": "ERROR: dependencies ‘(.+)’ are not available for package ‘(.+)’",
+  "test_ok": [
+    "ERROR: dependencies ‘lifecycle’, ‘vctrs’ are not available for package ‘tidyselect’",
+    "ERROR: dependencies ‘tidyr’, ‘purrr’, ‘broom’, ‘tibble’, ‘dplyr’, ‘tidyselect’, ‘car’ are not available for package ‘rstatix’"
+  ],
+  "test_fail": [
+    "Loading required package: BiocManager",
+    "Worker lattice starting",
+    "Error: package or namespace load failed for ‘BiocManager’"
+  ],
+  "packages": [
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyr",
+      "manager": "cran"
+    },
+    {
+      "name": "purrr",
+      "manager": "cran"
+    },
+    {
+      "name": "broom",
+      "manager": "cran"
+    },
+    {
+      "name": "tibble",
+      "manager": "cran"
+    },
+    {
+      "name": "dplyr",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyselect",
+      "manager": "cran"
+    },
+    {
+      "name": "car",
+      "manager": "cran"
+    },
+    {
+      "name": "ggplot2",
+      "manager": "cran"
+    },
+    {
+      "name": "stringr",
+      "manager": "cran"
+    },
+    {
+      "name": "gridtext",
+      "manager": "cran"
+    },
+    {
+      "name": "scales",
+      "manager": "cran"
+    }
+  ]
+}

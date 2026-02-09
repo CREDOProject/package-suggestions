@@ -1,0 +1,15 @@
+{
+  "matcher": "stat /credo_env/credoenv/cran/data\\.table_\\d+\\.\\d+\\.\\d+\\.tar\\.gz: no such file or directory",
+  "test_ok": [
+    "stat /credo_env/credoenv/cran/data.table_1.17.8.tar.gz: no such file or directory"
+  ],
+  "test_fail": [
+    "stat /different_path/other_package.tar.gz: no such file or directory"
+  ],
+  "packages": [
+    {
+      "name": "data.table",
+      "manager": "cran"
+    }
+  ]
+}

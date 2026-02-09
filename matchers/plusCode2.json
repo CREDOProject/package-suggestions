@@ -1,0 +1,27 @@
+{
+  "matcher": "ERROR: dependency ‘[a-zA-Z0-9]+’ is not available for package ‘[a-zA-Z0-9]+’",
+  "test_ok": [
+    "ERROR: dependency ‘Rcpp’ is not available for package ‘s2’",
+    "ERROR: dependency ‘s2’ is not available for package ‘sf’",
+    "ERROR: dependency ‘sf’ is not available for package ‘plusCode2’"
+  ],
+  "test_fail": [
+    "ERROR: package ‘foo’ could not be installed",
+    "ERROR: dependency ‘pkg’ installation failed",
+    "Warning message: package ‘bar’ is not available"
+  ],
+  "packages": [
+    {
+      "name": "Rcpp",
+      "manager": "cran"
+    },
+    {
+      "name": "s2",
+      "manager": "cran"
+    },
+    {
+      "name": "sf",
+      "manager": "cran"
+    }
+  ]
+}

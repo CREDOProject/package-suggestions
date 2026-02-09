@@ -1,0 +1,32 @@
+{
+  "matcher": "ERROR: dependencies .+ are not available for package ‘.+’",
+  "test_ok": [
+    "ERROR: dependencies ‘distr’, ‘distrEx’ are not available for package ‘RandVar’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘startupmsg’ is not available for package ‘distr’",
+    "ERROR: package ‘somepackage’ could not be loaded"
+  ],
+  "packages": [
+    {
+      "name": "distr",
+      "manager": "cran"
+    },
+    {
+      "name": "distrEx",
+      "manager": "cran"
+    },
+    {
+      "name": "RandVar",
+      "manager": "cran"
+    },
+    {
+      "name": "distrMod",
+      "manager": "cran"
+    },
+    {
+      "name": "RobAStBase",
+      "manager": "cran"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "matcher": "ERROR: dependency ‘(RCurl|fds|fda)’ is not available for package ‘.*’",
+  "test_ok": [
+    "ERROR: dependency ‘RCurl’ is not available for package ‘fds’",
+    "ERROR: dependency ‘fds’ is not available for package ‘fda’",
+    "ERROR: dependency ‘fda’ is not available for package ‘CollocInfer’"
+  ],
+  "test_fail": [
+    "ERROR: package ‘RCurl’ not found",
+    "ERROR: failed to install required packages",
+    "Dependency fda is missing"
+  ],
+  "packages": [
+    {
+      "name": "bitops",
+      "manager": "cran"
+    },
+    {
+      "name": "RCurl",
+      "manager": "cran"
+    },
+    {
+      "name": "fds",
+      "manager": "cran"
+    },
+    {
+      "name": "fda",
+      "manager": "cran"
+    }
+  ]
+}

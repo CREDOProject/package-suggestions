@@ -1,0 +1,28 @@
+{
+  "matcher": "gdal-config not found or not executable",
+  "test_ok": [
+    "configure: error: gdal-config not found or not executable."
+  ],
+  "test_fail": [
+    "checking for gdal-config... yes",
+    "configure: error: Something else went wrong"
+  ],
+  "packages": [
+    {
+      "name": "gdal-bin",
+      "manager": "apt"
+    },
+    {
+      "name": "sf",
+      "manager": "cran"
+    },
+    {
+      "name": "fmesher",
+      "manager": "cran"
+    },
+    {
+      "name": "rSPDE",
+      "manager": "cran"
+    }
+  ]
+}

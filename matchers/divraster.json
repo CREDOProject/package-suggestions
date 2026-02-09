@@ -1,0 +1,27 @@
+{
+  "matcher": "configure: error: GNU MP not found, see README|ERROR: dependency ‘rcdd’ is not available for package|ERROR: dependency ‘terra’ is not available for package",
+  "test_ok": [
+    "configure: error: GNU MP not found, see README",
+    "ERROR: dependency ‘rcdd’ is not available for package ‘hitandrun’",
+    "ERROR: dependency ‘terra’ is not available for package ‘hypervolume’"
+  ],
+  "test_fail": [
+    "checking whether we are cross compiling... no",
+    "using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’",
+    "ERROR: package installation failed due to network issues"
+  ],
+  "packages": [
+    {
+      "name": "libgmp-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "rcdd",
+      "manager": "cran"
+    },
+    {
+      "name": "terra",
+      "manager": "cran"
+    }
+  ]
+}

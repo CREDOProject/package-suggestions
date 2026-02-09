@@ -1,0 +1,19 @@
+{
+  "matcher": "fatal error: libpq-fe.h: No such file or directory",
+  "test_ok": [
+    "tools/test.c:18:10: fatal error: libpq-fe.h: No such file or directory"
+  ],
+  "test_fail": [
+    "tools/test.c:18:10: fatal error: anotherfile.h: No such file or directory"
+  ],
+  "packages": [
+    {
+      "name": "libpq-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "RPostgreSQL",
+      "manager": "cran"
+    }
+  ]
+}

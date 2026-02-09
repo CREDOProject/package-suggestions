@@ -1,0 +1,16 @@
+{
+  "matcher": "/usr/bin/ld: cannot find -ltirpc: No such file or directory",
+  "test_ok": [
+    "/usr/bin/ld: cannot find -ltirpc: No such file or directory"
+  ],
+  "test_fail": [
+    "/usr/bin/ld: cannot find",
+    "cannot find -ltirpc"
+  ],
+  "packages": [
+    {
+      "name": "libtirpc-dev",
+      "manager": "apt"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "matcher": "ODBC headers sql.h and sqlext.h not found",
+  "test_ok": [
+    "configure: error: \"ODBC headers sql.h and sqlext.h not found\""
+  ],
+  "test_fail": [
+    "ODBC headers not found but continuing",
+    "All dependencies found"
+  ],
+  "packages": [
+    {
+      "name": "unixodbc-dev",
+      "manager": "apt"
+    }
+  ]
+}

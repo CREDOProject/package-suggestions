@@ -1,0 +1,45 @@
+{
+  "matcher": "ERROR: dependency [‘'](vctrs|pillar|tibble|tidyselect|purrr|ggplot2|pbkrtest|cowplot)[’'] is not available for package [‘'].+[’']",
+  "test_ok": [
+    "ERROR: dependency ‘vctrs’ is not available for package ‘tidyselect’",
+    "ERROR: dependency ‘pillar’ is not available for package ‘dplyr’"
+  ],
+  "test_fail": [
+    "Installation of package ‘xyz’ had a non-zero exit status",
+    "Package ‘abc’ is not available for package ‘def’"
+  ],
+  "packages": [
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "tibble",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyselect",
+      "manager": "cran"
+    },
+    {
+      "name": "purrr",
+      "manager": "cran"
+    },
+    {
+      "name": "ggplot2",
+      "manager": "cran"
+    },
+    {
+      "name": "pbkrtest",
+      "manager": "cran"
+    },
+    {
+      "name": "cowplot",
+      "manager": "cran"
+    }
+  ]
+}

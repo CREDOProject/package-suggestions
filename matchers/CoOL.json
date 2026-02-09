@@ -1,0 +1,19 @@
+{
+  "matcher": "(\\[credo\\] testing library load in R|Reading package lists|debconf: delaying package configuration, since apt-utils is not installed)",
+  "test_ok": [
+    "[credo] testing library load in R",
+    "2025/12/29 02:27:34 apt.go:259: Reading package lists...",
+    "debconf: delaying package configuration, since apt-utils is not installed"
+  ],
+  "test_fail": [
+    "[credo] installing (bioconductor) package: CoOL",
+    "Unpacking r-base (4.3.3-2build2) over (4.3.3-2build2) ...",
+    "Setting up r-base (4.3.3-2build2) ..."
+  ],
+  "packages": [
+    {
+      "name": "apt-utils",
+      "manager": "apt"
+    }
+  ]
+}

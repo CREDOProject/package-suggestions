@@ -1,0 +1,21 @@
+{
+  "matcher": "(?m)configure: error: Java interpreter '/usr/lib/jvm/default-java/bin/java' does not work",
+  "test_ok": [
+    "configure: error: Java interpreter '/usr/lib/jvm/default-java/bin/java' does not work"
+  ],
+  "test_fail": [
+    "configure: error: Some other error",
+    "Java interpreter works as expected",
+    "No such file or directory"
+  ],
+  "packages": [
+    {
+      "name": "default-jdk",
+      "manager": "apt"
+    },
+    {
+      "name": "r-cran-rjava",
+      "manager": "apt"
+    }
+  ]
+}

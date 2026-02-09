@@ -1,0 +1,16 @@
+{
+  "matcher": "ERROR: dependency ‘coneproj’ is not available for package ‘ShapeChange’",
+  "test_ok": [
+    "ERROR: dependency ‘coneproj’ is not available for package ‘ShapeChange’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘someotherpackage’ is not available for package ‘ShapeChange’",
+    "ERROR: dependency ‘coneproj’ is not available for package ‘AnotherPackage’"
+  ],
+  "packages": [
+    {
+      "name": "coneproj",
+      "manager": "cran"
+    }
+  ]
+}

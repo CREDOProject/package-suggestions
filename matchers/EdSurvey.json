@@ -1,0 +1,53 @@
+{
+  "matcher": "ERROR: dependenc(ies|y).* (are|is) not available for package",
+  "test_ok": [
+    "ERROR: dependency ‘lifecycle’ is not available for package ‘vctrs’",
+    "ERROR: dependencies ‘lifecycle’, ‘vctrs’ are not available for package ‘pillar’"
+  ],
+  "test_fail": [
+    "** DONE (rlang)",
+    "Setting up make (4.3-4.1build2) ..."
+  ],
+  "packages": [
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "tibble",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyselect",
+      "manager": "cran"
+    },
+    {
+      "name": "forcats",
+      "manager": "cran"
+    },
+    {
+      "name": "hms",
+      "manager": "cran"
+    },
+    {
+      "name": "readr",
+      "manager": "cran"
+    },
+    {
+      "name": "haven",
+      "manager": "cran"
+    },
+    {
+      "name": "vroom",
+      "manager": "cran"
+    }
+  ]
+}

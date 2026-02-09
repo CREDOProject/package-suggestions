@@ -1,0 +1,25 @@
+{
+  "matcher": "dependencies.*(‘lifecycle’|‘pillar’|‘vctrs’).*not available",
+  "test_ok": [
+    "ERROR: dependencies ‘lifecycle’, ‘pillar’, ‘vctrs’ are not available for package ‘tibble’",
+    "ERROR: dependencies ‘lifecycle’, ‘vctrs’ are not available for package ‘purrr’"
+  ],
+  "test_fail": [
+    "install of package ‘/credo_env/credoenv/cran/tibble_3.3.0.tar.gz’ had non-zero exit status",
+    "ERROR: dependency ‘gtable’ is not available for package ‘gridExtra’"
+  ],
+  "packages": [
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    }
+  ]
+}

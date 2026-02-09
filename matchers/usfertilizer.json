@@ -1,0 +1,27 @@
+{
+  "matcher": "ERROR: dependency ‘(broom|modelr|tidyverse)’ is not available for package ‘(modelr|tidyverse|usfertilizer)’",
+  "test_ok": [
+    "ERROR: dependency ‘broom’ is not available for package ‘modelr’",
+    "ERROR: dependency ‘modelr’ is not available for package ‘tidyverse’",
+    "ERROR: dependency ‘tidyverse’ is not available for package ‘usfertilizer’"
+  ],
+  "test_fail": [
+    "ERROR: some other error",
+    "Warning: dependency issues",
+    "ERROR: another unrelated error message"
+  ],
+  "packages": [
+    {
+      "name": "broom",
+      "manager": "cran"
+    },
+    {
+      "name": "modelr",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyverse",
+      "manager": "cran"
+    }
+  ]
+}

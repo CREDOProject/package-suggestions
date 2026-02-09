@@ -1,0 +1,15 @@
+{
+  "matcher": "Error in use\\(\"curl\"\\) : could not find function \"use\"",
+  "test_ok": [
+    "Error in use(\"curl\") : could not find function \"use\""
+  ],
+  "test_fail": [
+    "Error in library(\"curl\") : there is no package called ‘curl’"
+  ],
+  "packages": [
+    {
+      "name": "devtools",
+      "manager": "cran"
+    }
+  ]
+}

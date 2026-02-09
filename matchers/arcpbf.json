@@ -1,0 +1,28 @@
+{
+  "matcher": "gdal-config not found or not executable",
+  "test_ok": [
+    "configure: error: gdal-config not found or not executable"
+  ],
+  "test_fail": [
+    "configure: error: file not found",
+    "Package not installed"
+  ],
+  "packages": [
+    {
+      "name": "gdal-bin",
+      "manager": "apt"
+    },
+    {
+      "name": "sf",
+      "manager": "cran"
+    },
+    {
+      "name": "arcgisutils",
+      "manager": "cran"
+    },
+    {
+      "name": "arcpbf",
+      "manager": "cran"
+    }
+  ]
+}

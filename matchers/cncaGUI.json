@@ -1,0 +1,20 @@
+{
+  "matcher": "fatal error: tk\\.h: No such file or directory",
+  "test_ok": [
+    "tcltkimg.c:3:10: fatal error: tk.h: No such file or directory"
+  ],
+  "test_fail": [
+    "fatal error: some_other_file.h: No such file or directory",
+    "random text without error"
+  ],
+  "packages": [
+    {
+      "name": "tk",
+      "manager": "apt"
+    },
+    {
+      "name": "tcl",
+      "manager": "apt"
+    }
+  ]
+}

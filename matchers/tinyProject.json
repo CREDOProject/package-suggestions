@@ -1,0 +1,20 @@
+{
+  "matcher": "r-base is already the newest version \\(4\\.3\\.3-2build2\\).*debconf: delaying package configuration, since apt-utils is not installed",
+  "test_ok": [
+    "r-base is already the newest version (4.3.3-2build2)...debconf: delaying package configuration, since apt-utils is not installed"
+  ],
+  "test_fail": [
+    "apt-utils is installed",
+    "Package lists...debconf proceeding with package configuration"
+  ],
+  "packages": [
+    {
+      "name": "apt-utils",
+      "manager": "apt"
+    },
+    {
+      "name": "tinyProject",
+      "manager": "bioconductor"
+    }
+  ]
+}

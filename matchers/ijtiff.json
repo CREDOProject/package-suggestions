@@ -1,0 +1,16 @@
+{
+  "matcher": "Bioconductor version '.+' is out-of-date; the current release version '.+' is available with R version '.+'",
+  "test_ok": [
+    "Bioconductor version '3.18' is out-of-date; the current release version '3.22' is available with R version '4.5'"
+  ],
+  "test_fail": [
+    "Version '3.18' is up-to-date",
+    "Error saving: exit status 2"
+  ],
+  "packages": [
+    {
+      "name": "BiocManager",
+      "manager": "cran"
+    }
+  ]
+}

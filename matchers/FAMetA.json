@@ -1,0 +1,20 @@
+{
+  "matcher": "\\[credo\\] testing library load in R",
+  "test_ok": [
+    "[credo] testing library load in R"
+  ],
+  "test_fail": [
+    "[credo] doing something else",
+    "[credo] installation completed"
+  ],
+  "packages": [
+    {
+      "name": "apt-utils",
+      "manager": "apt"
+    },
+    {
+      "name": "FAMetA",
+      "manager": "bioconductor"
+    }
+  ]
+}

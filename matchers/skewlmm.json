@@ -1,0 +1,23 @@
+{
+  "matcher": "\\[credo\\] installing \\(bioconductor\\) package: skewlmm",
+  "test_ok": [
+    "[credo] installing (bioconductor) package: skewlmm"
+  ],
+  "test_fail": [
+    "[credo] performing different task with skewlmm"
+  ],
+  "packages": [
+    {
+      "name": "r-base",
+      "manager": "apt"
+    },
+    {
+      "name": "r-base-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "skewlmm",
+      "manager": "bioconductor"
+    }
+  ]
+}

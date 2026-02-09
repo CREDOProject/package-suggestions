@@ -1,0 +1,51 @@
+{
+  "matcher": "ERROR: dependenc(ies|y) .*(lifecycle|vctrs|ggplot2|prodlim|Publish|rms|riskRegression|pillar|tibble|tidyselect).* (are|is) not available for package .*",
+  "test_ok": [
+    "ERROR: dependencies ‘lifecycle’, ‘vctrs’ are not available for package ‘pillar’"
+  ],
+  "test_fail": [
+    "install.packages(pkgs = pkg_path, lib = lib_path, repos = NULL)"
+  ],
+  "packages": [
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "ggplot2",
+      "manager": "cran"
+    },
+    {
+      "name": "prodlim",
+      "manager": "cran"
+    },
+    {
+      "name": "Publish",
+      "manager": "cran"
+    },
+    {
+      "name": "rms",
+      "manager": "cran"
+    },
+    {
+      "name": "riskRegression",
+      "manager": "cran"
+    },
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "tibble",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyselect",
+      "manager": "cran"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "matcher": "(?i)ERROR: Could not find a version that satisfies the requirement PIL",
+  "test_ok": [
+    "ERROR: Could not find a version that satisfies the requirement PIL (from versions: none)"
+  ],
+  "test_fail": [
+    "ERROR: No matching distribution found for PIL",
+    "ERROR: Could not find a version that satisfies the requirement numpy"
+  ],
+  "packages": [
+    {
+      "name": "Pillow",
+      "manager": "pip"
+    }
+  ]
+}

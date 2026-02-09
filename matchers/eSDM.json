@@ -1,0 +1,23 @@
+{
+  "matcher": "configure: error: gdal-config not found or not executable",
+  "test_ok": [
+    "configure: error: gdal-config not found or not executable"
+  ],
+  "test_fail": [
+    "configure: warning: gdal-config is not recommended"
+  ],
+  "packages": [
+    {
+      "name": "gdal-bin",
+      "manager": "apt"
+    },
+    {
+      "name": "libgdal-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "sf",
+      "manager": "cran"
+    }
+  ]
+}

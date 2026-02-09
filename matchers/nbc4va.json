@@ -1,0 +1,33 @@
+{
+  "matcher": "dependencies ‘([^’]+)’, ‘([^’]+)’ are not available for package ‘([^’]+)’",
+  "test_ok": [
+    "ERROR: dependencies ‘magrittr’, ‘otel’ are not available for package ‘promises’",
+    "ERROR: dependencies ‘httpuv’, ‘promises’ are not available for package ‘shiny’"
+  ],
+  "test_fail": [
+    "Installing package 'shiny' failed due to network issues",
+    "Package 'magrittr' is up-to-date"
+  ],
+  "packages": [
+    {
+      "name": "magrittr",
+      "manager": "cran"
+    },
+    {
+      "name": "otel",
+      "manager": "cran"
+    },
+    {
+      "name": "promises",
+      "manager": "cran"
+    },
+    {
+      "name": "httpuv",
+      "manager": "cran"
+    },
+    {
+      "name": "shiny",
+      "manager": "cran"
+    }
+  ]
+}

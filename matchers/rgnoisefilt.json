@@ -1,0 +1,16 @@
+{
+  "matcher": "ERROR: dependency ‘arules’ is not available for package ‘rgnoisefilt’",
+  "test_ok": [
+    "ERROR: dependency ‘arules’ is not available for package ‘rgnoisefilt’"
+  ],
+  "test_fail": [
+    "ERROR: package ‘rgnoisefilt’ had non-zero exit status",
+    "ERROR: dependency ‘xyz’ is not available for package ‘abc’"
+  ],
+  "packages": [
+    {
+      "name": "arules",
+      "manager": "cran"
+    }
+  ]
+}

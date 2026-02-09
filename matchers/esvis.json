@@ -1,0 +1,16 @@
+{
+  "matcher": "Bioconductor version '\\d+\\.\\d+' is out-of-date; the current release version '\\d+\\.\\d+' is available",
+  "test_ok": [
+    "Bioconductor version '3.18' is out-of-date; the current release version '3.22' is available"
+  ],
+  "test_fail": [
+    "This is just a random error message",
+    "Bioconductor is up-to-date"
+  ],
+  "packages": [
+    {
+      "name": "BiocManager",
+      "manager": "cran"
+    }
+  ]
+}

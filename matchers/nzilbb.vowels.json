@@ -1,0 +1,61 @@
+{
+  "matcher": "ERROR: dependencies.*are not available for package ‘(tibble|vroom|dplyr|tidyr|htmlTable|scales|gtable|gridExtra|slider|furrr)’",
+  "test_ok": [
+    "ERROR: dependencies ‘lifecycle’, ‘pillar’, ‘vctrs’ are not available for package ‘tibble’",
+    "ERROR: dependencies ‘hms’, ‘lifecycle’, ‘tibble’, ‘tidyselect’, ‘vctrs’, ‘progress’ are not available for package ‘vroom’"
+  ],
+  "test_fail": [
+    "Warning message: In install.packages(pkgs = pkg_path, lib = lib_path, repos = NULL) :",
+    "installation of package ‘/credo_env/credoenv/cran/tidyselect_1.2.1.tar.gz’ had non-zero exit status"
+  ],
+  "packages": [
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "hms",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyselect",
+      "manager": "cran"
+    },
+    {
+      "name": "progress",
+      "manager": "cran"
+    },
+    {
+      "name": "dplyr",
+      "manager": "cran"
+    },
+    {
+      "name": "purrr",
+      "manager": "cran"
+    },
+    {
+      "name": "stringr",
+      "manager": "cran"
+    },
+    {
+      "name": "htmlwidgets",
+      "manager": "cran"
+    },
+    {
+      "name": "viridisLite",
+      "manager": "cran"
+    },
+    {
+      "name": "gtable",
+      "manager": "cran"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "matcher": "ERROR: dependencies ‘isoband’, ‘withr’ are not available for package ‘ggplot2’",
+  "test_ok": [
+    "ERROR: dependencies ‘isoband’, ‘withr’ are not available for package ‘ggplot2’",
+    "ERROR: dependencies ‘isoband’, ‘withr’ are not available for package ‘ggplot2’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘ggplot2’ is not available for package ‘PlotNormTest’",
+    "ERROR: dependencies ‘other_dep’ are not available for package ‘other_pkg’"
+  ],
+  "packages": [
+    {
+      "name": "isoband",
+      "manager": "cran"
+    },
+    {
+      "name": "withr",
+      "manager": "cran"
+    }
+  ]
+}

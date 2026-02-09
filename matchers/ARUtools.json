@@ -1,0 +1,27 @@
+{
+  "matcher": "gdal-config not found or not executable",
+  "test_ok": [
+    "configure: error: gdal-config not found or not executable."
+  ],
+  "test_fail": [
+    "configure: error: some-other-error"
+  ],
+  "packages": [
+    {
+      "name": "gdal-bin",
+      "manager": "apt"
+    },
+    {
+      "name": "sf",
+      "manager": "cran"
+    },
+    {
+      "name": "spsurvey",
+      "manager": "cran"
+    },
+    {
+      "name": "ARUtools",
+      "manager": "cran"
+    }
+  ]
+}

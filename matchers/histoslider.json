@@ -1,0 +1,32 @@
+{
+  "matcher": "ERROR: dependency ‘([a-zA-Z0-9]+)’ is not available for package",
+  "test_ok": [
+    "ERROR: dependency ‘fs’ is not available for package ‘sass’",
+    "ERROR: dependency ‘sass’ is not available for package ‘bslib’",
+    "ERROR: dependency ‘bslib’ is not available for package ‘shiny’",
+    "ERROR: dependency ‘shiny’ is not available for package ‘histoslider’"
+  ],
+  "test_fail": [
+    "Successful installation of package",
+    "ERROR: package ‘abcd’ is not found",
+    "Warning: package ‘xyz’ not found"
+  ],
+  "packages": [
+    {
+      "name": "fs",
+      "manager": "cran"
+    },
+    {
+      "name": "sass",
+      "manager": "cran"
+    },
+    {
+      "name": "bslib",
+      "manager": "cran"
+    },
+    {
+      "name": "shiny",
+      "manager": "cran"
+    }
+  ]
+}

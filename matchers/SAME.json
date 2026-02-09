@@ -1,0 +1,24 @@
+{
+  "matcher": "automatic detection of JAGS failed\\. Please use pkg-config to locate the JAGS library\\.",
+  "test_ok": [
+    "configure: error: \"automatic detection of JAGS failed. Please use pkg-config to locate the JAGS library. See the INSTALL file for details.\""
+  ],
+  "test_fail": [
+    "Some other error unrelated to JAGS",
+    "configure: error: something else entirely"
+  ],
+  "packages": [
+    {
+      "name": "jags",
+      "manager": "apt"
+    },
+    {
+      "name": "r-cran-rjags",
+      "manager": "apt"
+    },
+    {
+      "name": "rjags",
+      "manager": "cran"
+    }
+  ]
+}

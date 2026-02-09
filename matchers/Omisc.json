@@ -1,0 +1,21 @@
+{
+  "matcher": "ERROR: dependency ‘gsl’ is not available for package ‘copula’",
+  "test_ok": [
+    "ERROR: dependency ‘gsl’ is not available for package ‘copula’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘unknown-package’ is not available for package ‘copula’",
+    "ERROR: dependency ‘gsl’ is not available for package ‘unknown-package’",
+    "Random log line not related to dependencies"
+  ],
+  "packages": [
+    {
+      "name": "libgsl-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "gsl",
+      "manager": "cran"
+    }
+  ]
+}

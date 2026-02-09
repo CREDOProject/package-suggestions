@@ -1,0 +1,17 @@
+{
+  "matcher": "ERROR: dependency ‘purrr’ is not available for package ‘.*’",
+  "test_ok": [
+    "ERROR: dependency ‘purrr’ is not available for package ‘usethis’",
+    "ERROR: dependency ‘purrr’ is not available for package ‘anotherpackage’"
+  ],
+  "test_fail": [
+    "dependency ‘somethingelse’ is not available for package ‘usethis’",
+    "ERROR: dependency ‘tidyverse’ is not available for package ‘usethis’"
+  ],
+  "packages": [
+    {
+      "name": "purrr",
+      "manager": "cran"
+    }
+  ]
+}

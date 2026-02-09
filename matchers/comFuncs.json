@@ -1,0 +1,40 @@
+{
+  "matcher": "ERROR: dependency ‘(htmltools|sass|jquerylib|bslib|shiny)’ is not available for package",
+  "test_ok": [
+    "ERROR: dependency ‘htmltools’ is not available for package ‘htmltools’",
+    "ERROR: dependency ‘sass’ is not available for package ‘sass’",
+    "ERROR: dependency ‘jquerylib’ is not available for package ‘jquerylib’",
+    "ERROR: dependency ‘bslib’ is not available for package ‘bslib’",
+    "ERROR: dependency ‘shiny’ is not available for package ‘comFuncs’"
+  ],
+  "test_fail": [
+    "ERROR: some other error message",
+    "WARNING: dependency ‘htmltools’ is suggested but not required"
+  ],
+  "packages": [
+    {
+      "name": "digest",
+      "manager": "cran"
+    },
+    {
+      "name": "htmltools",
+      "manager": "cran"
+    },
+    {
+      "name": "jquerylib",
+      "manager": "cran"
+    },
+    {
+      "name": "sass",
+      "manager": "cran"
+    },
+    {
+      "name": "bslib",
+      "manager": "cran"
+    },
+    {
+      "name": "shiny",
+      "manager": "cran"
+    }
+  ]
+}

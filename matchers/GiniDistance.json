@@ -1,0 +1,21 @@
+{
+  "matcher": "ERROR: dependency ‘(gsl|energy)’ is not available for package ‘(energy|GiniDistance)’",
+  "test_ok": [
+    "ERROR: dependency ‘gsl’ is not available for package ‘energy’",
+    "ERROR: dependency ‘energy’ is not available for package ‘GiniDistance’"
+  ],
+  "test_fail": [
+    "ERROR: some other error unrelated to package dependencies",
+    "Installation successful with all dependencies"
+  ],
+  "packages": [
+    {
+      "name": "gsl",
+      "manager": "cran"
+    },
+    {
+      "name": "energy",
+      "manager": "cran"
+    }
+  ]
+}

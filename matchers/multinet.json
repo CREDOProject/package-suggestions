@@ -1,0 +1,21 @@
+{
+  "matcher": "ERROR: dependency ‘[^’]+’ is not available for package ‘[^’]+’",
+  "test_ok": [
+    "ERROR: dependency ‘vctrs’ is not available for package ‘igraph’",
+    "ERROR: dependency ‘igraph’ is not available for package ‘multinet’"
+  ],
+  "test_fail": [
+    "Successfully installed package",
+    "ERROR: failed to install package"
+  ],
+  "packages": [
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "igraph",
+      "manager": "cran"
+    }
+  ]
+}

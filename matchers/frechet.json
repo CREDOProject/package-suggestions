@@ -1,0 +1,33 @@
+{
+  "matcher": "dependency ‘.*’ is not available for package ‘.*’",
+  "test_ok": [
+    "ERROR: dependency ‘xfun’ is not available for package ‘highr’",
+    "ERROR: dependency ‘highr’ is not available for package ‘knitr’",
+    "ERROR: dependency ‘knitr’ is not available for package ‘rmarkdown’"
+  ],
+  "test_fail": [
+    "installation of package ‘/credo_env/credoenv/cran/highr_0.11.tar.gz’ had non-zero exit status"
+  ],
+  "packages": [
+    {
+      "name": "xfun",
+      "manager": "cran"
+    },
+    {
+      "name": "highr",
+      "manager": "cran"
+    },
+    {
+      "name": "knitr",
+      "manager": "cran"
+    },
+    {
+      "name": "rmarkdown",
+      "manager": "cran"
+    },
+    {
+      "name": "fdapace",
+      "manager": "cran"
+    }
+  ]
+}

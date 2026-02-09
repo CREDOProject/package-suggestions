@@ -1,0 +1,23 @@
+{
+  "matcher": "compilation failed for package ‘OpenMx’|‘Rf_isDataFrame’ was not declared in this scope|make: \\*\\*\\* .* Error 1",
+  "test_ok": [
+    "make: *** [/usr/lib/R/etc/Makeconf:200: omxData.o] Error 1",
+    "ERROR: compilation failed for package ‘OpenMx’",
+    "omxData.cpp:282:16: error: ‘Rf_isDataFrame’ was not declared in this scope"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘OpenMx’ is not available for package ‘EasyMx’",
+    "Warning message:",
+    "Installation of package completed successfully"
+  ],
+  "packages": [
+    {
+      "name": "libtbb-dev",
+      "manager": "apt"
+    },
+    {
+      "name": "OpenMx",
+      "manager": "cran"
+    }
+  ]
+}

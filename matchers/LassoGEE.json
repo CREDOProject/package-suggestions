@@ -1,0 +1,20 @@
+{
+  "matcher": "\\[credo\\] testing library load in R",
+  "test_ok": [
+    "[credo] testing library load in R"
+  ],
+  "test_fail": [
+    "Testing library load failed in R",
+    "Error loading the library in R"
+  ],
+  "packages": [
+    {
+      "name": "apt-utils",
+      "manager": "apt"
+    },
+    {
+      "name": "LassoGEE",
+      "manager": "bioconductor"
+    }
+  ]
+}

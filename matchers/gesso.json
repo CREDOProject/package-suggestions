@@ -1,0 +1,16 @@
+{
+  "matcher": "debconf: delaying package configuration, since apt-utils is not installed",
+  "test_ok": [
+    "debconf: delaying package configuration, since apt-utils is not installed"
+  ],
+  "test_fail": [
+    "debconf: configuring packages",
+    "package configuration completed"
+  ],
+  "packages": [
+    {
+      "name": "apt-utils",
+      "manager": "apt"
+    }
+  ]
+}

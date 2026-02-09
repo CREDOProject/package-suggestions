@@ -1,0 +1,45 @@
+{
+  "matcher": "ERROR: dependenc(ies|y) .* (are|is) not available for package ‘(?:tibble|tidyselect|dplyr|tidyr|purrr|photosynthesisLRC)’",
+  "test_ok": [
+    "ERROR: dependencies ‘lifecycle’, ‘vctrs’ are not available for package ‘tidyselect’",
+    "ERROR: dependencies ‘lifecycle’, ‘pillar’, ‘vctrs’ are not available for package ‘tibble’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘rlang’ is not available for package ‘lifecycle’",
+    "all dependencies are available"
+  ],
+  "packages": [
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "tibble",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyselect",
+      "manager": "cran"
+    },
+    {
+      "name": "dplyr",
+      "manager": "cran"
+    },
+    {
+      "name": "purrr",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyr",
+      "manager": "cran"
+    }
+  ]
+}

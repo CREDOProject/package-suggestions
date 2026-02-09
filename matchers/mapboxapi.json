@@ -1,0 +1,48 @@
+{
+  "matcher": "ERROR: dependency ‘[a-zA-Z]+’ is not available for package ‘[a-zA-Z]+’",
+  "test_ok": [
+    "ERROR: dependency ‘rmarkdown’ is not available for package ‘htmlwidgets’",
+    "ERROR: dependency ‘viridisLite’ is not available for package ‘scales’",
+    "ERROR: dependency ‘terra’ is not available for package ‘raster’",
+    "ERROR: dependency ‘raster’ is not available for package ‘slippymath’"
+  ],
+  "test_fail": [
+    "configuration failed for package ‘sf’",
+    "gdal-config not found or not executable",
+    "could not find function"
+  ],
+  "packages": [
+    {
+      "name": "bslib",
+      "manager": "cran"
+    },
+    {
+      "name": "rmarkdown",
+      "manager": "cran"
+    },
+    {
+      "name": "htmlwidgets",
+      "manager": "cran"
+    },
+    {
+      "name": "viridisLite",
+      "manager": "cran"
+    },
+    {
+      "name": "scales",
+      "manager": "cran"
+    },
+    {
+      "name": "terra",
+      "manager": "cran"
+    },
+    {
+      "name": "raster",
+      "manager": "cran"
+    },
+    {
+      "name": "slippymath",
+      "manager": "cran"
+    }
+  ]
+}

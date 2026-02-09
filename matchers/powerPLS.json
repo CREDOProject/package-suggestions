@@ -1,0 +1,37 @@
+{
+  "matcher": "ERROR: dependency ‘[^']+’ is not available for package ‘[^']+’",
+  "test_ok": [
+    "ERROR: dependency ‘future’ is not available for package ‘future.apply’",
+    "ERROR: dependency ‘future.apply’ is not available for package ‘lava’",
+    "ERROR: dependency ‘lava’ is not available for package ‘prodlim’",
+    "ERROR: dependency ‘prodlim’ is not available for package ‘ipred’",
+    "ERROR: dependency ‘ipred’ is not available for package ‘recipes’"
+  ],
+  "test_fail": [
+    "ERROR: unexpected symbol in '...'",
+    "ERROR: dependency not found",
+    "ERROR: package is not available"
+  ],
+  "packages": [
+    {
+      "name": "future",
+      "manager": "cran"
+    },
+    {
+      "name": "future.apply",
+      "manager": "cran"
+    },
+    {
+      "name": "lava",
+      "manager": "cran"
+    },
+    {
+      "name": "prodlim",
+      "manager": "cran"
+    },
+    {
+      "name": "ipred",
+      "manager": "cran"
+    }
+  ]
+}

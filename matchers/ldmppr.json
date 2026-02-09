@@ -1,0 +1,33 @@
+{
+  "matcher": "ERROR: dependency ‘(lava|prodlim|ipred|recipes|furrr)’ is not available",
+  "test_ok": [
+    "ERROR: dependency ‘lava’ is not available for package ‘prodlim’",
+    "ERROR: dependency ‘ipred’ is not available for package ‘recipes’"
+  ],
+  "test_fail": [
+    "This is a generic error related to a package",
+    "Installation successful with no errors"
+  ],
+  "packages": [
+    {
+      "name": "lava",
+      "manager": "cran"
+    },
+    {
+      "name": "prodlim",
+      "manager": "cran"
+    },
+    {
+      "name": "ipred",
+      "manager": "cran"
+    },
+    {
+      "name": "recipes",
+      "manager": "cran"
+    },
+    {
+      "name": "furrr",
+      "manager": "cran"
+    }
+  ]
+}

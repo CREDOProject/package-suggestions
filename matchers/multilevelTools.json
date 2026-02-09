@@ -1,0 +1,20 @@
+{
+  "matcher": "(?s)Error: package or namespace load failed for ‘BiocManager’:.+\\.onAttach failed",
+  "test_ok": [
+    "Error: package or namespace load failed for ‘BiocManager’: .onAttach failed in attachNamespace() for 'BiocManager', details: call: if (is.package_version(release) \u0026\u0026 version \u003c release) { error: missing value where TRUE/FALSE needed"
+  ],
+  "test_fail": [
+    "Error: package or namespace load failed for ‘anotherPackage’: .onAttach failed in attachNamespace() for 'anotherPackage', details: call: some other error",
+    "Warning: package or namespace load failed for ‘BiocManager’"
+  ],
+  "packages": [
+    {
+      "name": "BiocManager",
+      "manager": "cran"
+    },
+    {
+      "name": "TTR",
+      "manager": "cran"
+    }
+  ]
+}

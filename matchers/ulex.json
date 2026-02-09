@@ -1,0 +1,20 @@
+{
+  "matcher": "gdal-config not found or not executable",
+  "test_ok": [
+    "configure: error: gdal-config not found or not executable."
+  ],
+  "test_fail": [
+    "gcc: error: unrecognized command line option '-mno-omit-leaf-frame-pointer'",
+    "ERROR: dependencies ‘raster’, ‘sf’ are not available for package ‘ulex’"
+  ],
+  "packages": [
+    {
+      "name": "gdal-bin",
+      "manager": "apt"
+    },
+    {
+      "name": "libgdal-dev",
+      "manager": "apt"
+    }
+  ]
+}

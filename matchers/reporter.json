@@ -1,0 +1,20 @@
+{
+  "matcher": "ERROR: dependencies ‘jpeg’, ‘zip’ are not available for package ‘reporter’",
+  "test_ok": [
+    "ERROR: dependencies ‘jpeg’, ‘zip’ are not available for package ‘reporter’"
+  ],
+  "test_fail": [
+    "ERROR: dependencies ‘png’ are not available for package ‘reporter’",
+    "Error: dependencies missing"
+  ],
+  "packages": [
+    {
+      "name": "jpeg",
+      "manager": "cran"
+    },
+    {
+      "name": "zip",
+      "manager": "cran"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "matcher": "ERROR: dependencies ‘expm’, ‘data\\.table’ are not available for package ‘DescTools’",
+  "test_ok": [
+    "ERROR: dependencies ‘expm’, ‘data.table’ are not available for package ‘DescTools’"
+  ],
+  "test_fail": [
+    "ERROR: some other package has missing dependencies",
+    "dependencies ‘expm’, ‘data.table’ are not available but from a different context"
+  ],
+  "packages": [
+    {
+      "name": "expm",
+      "manager": "cran"
+    },
+    {
+      "name": "data.table",
+      "manager": "cran"
+    }
+  ]
+}

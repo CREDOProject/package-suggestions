@@ -1,0 +1,16 @@
+{
+  "matcher": "fatal error: gsl/gsl_multimin.h: No such file or directory",
+  "test_ok": [
+    "fatal error: gsl/gsl_multimin.h: No such file or directory"
+  ],
+  "test_fail": [
+    "fatal error: another/header.h: No such file or directory",
+    ""
+  ],
+  "packages": [
+    {
+      "name": "libgsl-dev",
+      "manager": "apt"
+    }
+  ]
+}

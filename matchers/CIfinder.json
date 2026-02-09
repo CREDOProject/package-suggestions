@@ -1,0 +1,45 @@
+{
+  "matcher": "ERROR: .*dependenc(ies|y).* (are|is) not available for package",
+  "test_ok": [
+    "ERROR: dependencies ‘htmltools’, ‘jquerylib’, ‘sass’ are not available for package ‘bslib’",
+    "ERROR: dependency ‘htmltools’ is not available for package ‘fontawesome’"
+  ],
+  "test_fail": [
+    "Installation complete",
+    "No errors occurred during installation"
+  ],
+  "packages": [
+    {
+      "name": "htmltools",
+      "manager": "cran"
+    },
+    {
+      "name": "jquerylib",
+      "manager": "cran"
+    },
+    {
+      "name": "sass",
+      "manager": "cran"
+    },
+    {
+      "name": "bslib",
+      "manager": "cran"
+    },
+    {
+      "name": "fontawesome",
+      "manager": "cran"
+    },
+    {
+      "name": "rmarkdown",
+      "manager": "cran"
+    },
+    {
+      "name": "kableExtra",
+      "manager": "cran"
+    },
+    {
+      "name": "CIfinder",
+      "manager": "cran"
+    }
+  ]
+}

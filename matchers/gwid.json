@@ -1,0 +1,21 @@
+{
+  "matcher": "ERROR: dependency .htmltools. is not available for package .*",
+  "test_ok": [
+    "ERROR: dependency ‘htmltools’ is not available for package ‘sass’",
+    "ERROR: dependency ‘htmltools’ is not available for package ‘crosstalk’"
+  ],
+  "test_fail": [
+    "ERROR: some other unrelated error message",
+    "Installation successful for package 'htmltools'"
+  ],
+  "packages": [
+    {
+      "name": "htmltools",
+      "manager": "cran"
+    },
+    {
+      "name": "fastmap",
+      "manager": "cran"
+    }
+  ]
+}

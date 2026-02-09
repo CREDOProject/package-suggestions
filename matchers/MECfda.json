@@ -1,0 +1,16 @@
+{
+  "matcher": "ERROR: dependency ‘gamm4’ is not available for package ‘refund’",
+  "test_ok": [
+    "ERROR: dependency ‘gamm4’ is not available for package ‘refund’"
+  ],
+  "test_fail": [
+    "ERROR: some other unrelated error message",
+    "ERROR: dependency ‘someotherpackage’ is not available for package ‘refund’"
+  ],
+  "packages": [
+    {
+      "name": "gamm4",
+      "manager": "cran"
+    }
+  ]
+}

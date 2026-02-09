@@ -1,0 +1,37 @@
+{
+  "matcher": "ERROR: dependency ‘[a-zA-Z]+’ is not available for package ‘[a-zA-Z]+’",
+  "test_ok": [
+    "ERROR: dependency ‘vctrs’ is not available for package ‘stringr’",
+    "ERROR: dependency ‘stringr’ is not available for package ‘tidyr’",
+    "ERROR: dependency ‘tidyr’ is not available for package ‘plotly’",
+    "ERROR: dependency ‘plotly’ is not available for package ‘colordistance’",
+    "ERROR: dependency ‘colordistance’ is not available for package ‘PUPMCR’"
+  ],
+  "test_fail": [
+    "ERROR: package ‘tidyr’ not found",
+    "Warning: missing dependencies for package ‘PUPMCR’",
+    "Dependency error found"
+  ],
+  "packages": [
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "stringr",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyr",
+      "manager": "cran"
+    },
+    {
+      "name": "plotly",
+      "manager": "cran"
+    },
+    {
+      "name": "colordistance",
+      "manager": "cran"
+    }
+  ]
+}

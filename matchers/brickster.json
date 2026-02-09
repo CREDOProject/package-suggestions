@@ -1,0 +1,21 @@
+{
+  "matcher": "ERROR: dependencies ‘lifecycle’, ‘vctrs’ are not available for package ‘[a-zA-Z0-9]+’",
+  "test_ok": [
+    "ERROR: dependencies ‘lifecycle’, ‘vctrs’ are not available for package ‘tidyselect’",
+    "ERROR: dependencies ‘lifecycle’, ‘vctrs’ are not available for package ‘pillar’"
+  ],
+  "test_fail": [
+    "installation of package ‘/credo_env/credoenv/cran/tidyselect_1.2.1.tar.gz’ had non-zero exit status",
+    "ERROR: dependencies ‘dbplyr’, ‘dplyr’, ‘httr2’, ‘purrr’ are not available for package ‘brickster’"
+  ],
+  "packages": [
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    }
+  ]
+}

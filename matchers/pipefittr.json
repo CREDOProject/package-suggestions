@@ -1,0 +1,46 @@
+{
+  "matcher": "ERROR: dependenc(ies|y) ‘.*’ (are|is) not available for package ‘.*’",
+  "test_ok": [
+    "ERROR: dependency ‘rlang’ is not available for package ‘lifecycle’",
+    "ERROR: dependencies ‘lifecycle’, ‘vctrs’ are not available for package ‘stringr’"
+  ],
+  "test_fail": [
+    "Error: object not found",
+    "Warning: package not installed",
+    "Successful installation of package"
+  ],
+  "packages": [
+    {
+      "name": "rlang",
+      "manager": "cran"
+    },
+    {
+      "name": "lifecycle",
+      "manager": "cran"
+    },
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "later",
+      "manager": "cran"
+    },
+    {
+      "name": "promises",
+      "manager": "cran"
+    },
+    {
+      "name": "stringr",
+      "manager": "cran"
+    },
+    {
+      "name": "miniUI",
+      "manager": "cran"
+    },
+    {
+      "name": "shiny",
+      "manager": "cran"
+    }
+  ]
+}

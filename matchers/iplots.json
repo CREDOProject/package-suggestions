@@ -1,0 +1,21 @@
+{
+  "matcher": "Java interpreter ('/usr/lib/jvm/default-java/bin/java') does not work",
+  "test_ok": [
+    "configure: error: Java interpreter '/usr/lib/jvm/default-java/bin/java' does not work"
+  ],
+  "test_fail": [
+    "configure: error: cannot find Java",
+    "error: no Java runtime present",
+    "java -version"
+  ],
+  "packages": [
+    {
+      "name": "default-jre",
+      "manager": "apt"
+    },
+    {
+      "name": "rJava",
+      "manager": "cran"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "matcher": "ERROR: dependency ‘gamm4’ is not available for package ‘vagam’",
+  "test_ok": [
+    "ERROR: dependency ‘gamm4’ is not available for package ‘vagam’"
+  ],
+  "test_fail": [
+    "ERROR: something else went wrong",
+    "dependency not available for some other package"
+  ],
+  "packages": [
+    {
+      "name": "gamm4",
+      "manager": "cran"
+    }
+  ]
+}

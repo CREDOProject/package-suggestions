@@ -1,0 +1,16 @@
+{
+  "matcher": "ERROR: dependency ‘arules’ is not available for package ‘arc’",
+  "test_ok": [
+    "ERROR: dependency ‘arules’ is not available for package ‘arc’"
+  ],
+  "test_fail": [
+    "ERROR: dependency ‘some_other_package’ is not available for package ‘arc’",
+    "Warning: arules is not installed"
+  ],
+  "packages": [
+    {
+      "name": "arules",
+      "manager": "cran"
+    }
+  ]
+}

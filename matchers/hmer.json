@@ -1,0 +1,24 @@
+{
+  "matcher": "Bioconductor version '3\\.18' is out-of-date; the current release version '3\\.22'",
+  "test_ok": [
+    "Bioconductor version '3.18' is out-of-date; the current release version '3.22'"
+  ],
+  "test_fail": [
+    "Bioconductor version '3.18' is up-to-date; the current release version '3.18'",
+    "Error unrelated to Bioconductor version"
+  ],
+  "packages": [
+    {
+      "name": "hmer",
+      "manager": "bioconductor"
+    },
+    {
+      "name": "GGally",
+      "manager": "cran"
+    },
+    {
+      "name": "openssl",
+      "manager": "apt"
+    }
+  ]
+}

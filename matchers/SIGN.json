@@ -1,0 +1,23 @@
+{
+  "matcher": "ERROR: dependencies ‘(?P\u003cpackage1\u003e[^’]+)’, ‘(?P\u003cpackage2\u003e[^’]+)’ are not available for package ‘(?P\u003cpackage3\u003e[^’]+)’",
+  "test_ok": [
+    "ERROR: dependencies ‘GSEABase’, ‘SingleCellExperiment’ are not available for package ‘GSVA’"
+  ],
+  "test_fail": [
+    "ERROR: package ‘GSEABase’ had non-zero exit status"
+  ],
+  "packages": [
+    {
+      "name": "annotate",
+      "manager": "bioconductor"
+    },
+    {
+      "name": "GSEABase",
+      "manager": "bioconductor"
+    },
+    {
+      "name": "SingleCellExperiment",
+      "manager": "bioconductor"
+    }
+  ]
+}

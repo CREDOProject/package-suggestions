@@ -1,0 +1,19 @@
+{
+  "matcher": "ERROR: dependency ‘glmnet’ is not available for package",
+  "test_ok": [
+    "ERROR: dependency ‘glmnet’ is not available for package ‘glmnet’"
+  ],
+  "test_fail": [
+    "Error in library(glmnet): there is no package called ‘glmnet’"
+  ],
+  "packages": [
+    {
+      "name": "glmnet",
+      "manager": "cran"
+    },
+    {
+      "name": "foreach",
+      "manager": "cran"
+    }
+  ]
+}

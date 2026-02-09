@@ -1,0 +1,43 @@
+{
+  "matcher": "ERROR: dependency ‘vctrs’ is not available for package",
+  "test_ok": [
+    "ERROR: dependency ‘vctrs’ is not available for package ‘ggplot2’"
+  ],
+  "test_fail": [
+    "ERROR: something else is not available for package"
+  ],
+  "packages": [
+    {
+      "name": "vctrs",
+      "manager": "cran"
+    },
+    {
+      "name": "ggplot2",
+      "manager": "cran"
+    },
+    {
+      "name": "stringr",
+      "manager": "cran"
+    },
+    {
+      "name": "pillar",
+      "manager": "cran"
+    },
+    {
+      "name": "tidyselect",
+      "manager": "cran"
+    },
+    {
+      "name": "tibble",
+      "manager": "cran"
+    },
+    {
+      "name": "dplyr",
+      "manager": "cran"
+    },
+    {
+      "name": "purrr",
+      "manager": "cran"
+    }
+  ]
+}

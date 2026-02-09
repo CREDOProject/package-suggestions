@@ -1,0 +1,33 @@
+{
+  "matcher": "ERROR: dependency ‘(.*?)’ is not available for package ‘(.*?)’",
+  "test_ok": [
+    "ERROR: dependency ‘RcppArmadillo’ is not available for package ‘forecast’",
+    "ERROR: dependency ‘forecast’ is not available for package ‘doBy’"
+  ],
+  "test_fail": [
+    "DONE (ggplot2)",
+    "testing if installed package can be loaded from temporary location"
+  ],
+  "packages": [
+    {
+      "name": "RcppArmadillo",
+      "manager": "cran"
+    },
+    {
+      "name": "forecast",
+      "manager": "cran"
+    },
+    {
+      "name": "doBy",
+      "manager": "cran"
+    },
+    {
+      "name": "pbkrtest",
+      "manager": "cran"
+    },
+    {
+      "name": "survminer",
+      "manager": "cran"
+    }
+  ]
+}

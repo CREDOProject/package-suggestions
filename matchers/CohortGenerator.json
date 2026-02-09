@@ -1,0 +1,24 @@
+{
+  "matcher": "ERROR: dependencies ‘rJava’, ‘SqlRender’ are not available for package ‘DatabaseConnector’",
+  "test_ok": [
+    "ERROR: dependencies ‘rJava’, ‘SqlRender’ are not available for package ‘DatabaseConnector’"
+  ],
+  "test_fail": [
+    "ERROR: dependencies ‘someOtherPackage’ are not available for package ‘DatabaseConnector’",
+    "Installing package DatabaseConnector failed due to network error"
+  ],
+  "packages": [
+    {
+      "name": "rJava",
+      "manager": "cran"
+    },
+    {
+      "name": "SqlRender",
+      "manager": "cran"
+    },
+    {
+      "name": "DatabaseConnector",
+      "manager": "cran"
+    }
+  ]
+}

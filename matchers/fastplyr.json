@@ -1,0 +1,21 @@
+{
+  "matcher": "ERROR: dependency ‘([^’]*)’ is not available for package ‘([^’]*)’",
+  "test_ok": [
+    "ERROR: dependency ‘collapse’ is not available for package ‘cheapr’",
+    "ERROR: dependency ‘cheapr’ is not available for package ‘fastplyr’"
+  ],
+  "test_fail": [
+    "Done building package ‘cheapr’",
+    "Dependency installation successful for package ‘fastplyr’"
+  ],
+  "packages": [
+    {
+      "name": "collapse",
+      "manager": "cran"
+    },
+    {
+      "name": "cheapr",
+      "manager": "cran"
+    }
+  ]
+}
