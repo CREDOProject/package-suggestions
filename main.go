@@ -20,6 +20,7 @@ type TestableSuggestions struct {
 	TestOK   []string  `json:"test_ok"`
 	TestFail []string  `json:"test_fail"`
 	Packages []Package `json:"packages"`
+	Filename string    `json:"-"`
 }
 
 type OutputSuggestions struct {
@@ -48,6 +49,7 @@ func main() {
 			log.Default().Fatal(err)
 		}
 		jsonFile.Close()
+		suggestion.Filename = e.Name()
 		testableSuggestions = append(testableSuggestions, suggestion)
 	}
 	var outputSuggestions []OutputSuggestions
@@ -61,14 +63,16 @@ func main() {
 		}
 		for _, testOk := range suggestion.TestOK {
 			if !regex.MatchString(testOk) {
-				log.Default().Fatalf("%s FAIL with %s.",
+				log.Default().Fatalf("%s (%s) FAIL with %s.",
+					suggestion.Filename,
 					suggestion.Matcher,
 					testOk)
 			}
 		}
 		for _, testFail := range suggestion.TestFail {
 			if regex.MatchString(testFail) {
-				log.Default().Fatalf("%s FAIL with %s.",
+				log.Default().Fatalf("%s (%s) FAIL with %s.",
+					suggestion.Filename,
 					suggestion.Matcher,
 					testFail)
 			}
